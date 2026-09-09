@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.IO.Compression;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
@@ -12,7 +13,7 @@ public static class RuSetup
     [STAThread]
     public static int Main(string[] args)
     {
-        string root = AppDomain.CurrentDomain.BaseDirectory;
+        string root = GetDataRoot();
         if (args.Length > 0 && Directory.Exists(Path.Combine(args[0], "mods")))
         {
             try
@@ -29,6 +30,26 @@ public static class RuSetup
         Application.EnableVisualStyles();
         Application.Run(new SetupForm(root));
         return 0;
+    }
+
+    public static string GetDataRoot()
+    {
+        string exeDir = AppDomain.CurrentDomain.BaseDirectory;
+        if (Directory.Exists(Path.Combine(exeDir, "resourcepacks"))) return exeDir;
+        string tmp = Path.Combine(Path.GetTempPath(), "SF5RU_" + Ver);
+        bool ok = false;
+        try { ok = File.Exists(Path.Combine(tmp, "version.txt")) && File.ReadAllText(Path.Combine(tmp, "version.txt")).Trim() == Ver; }
+        catch { }
+        if (!ok)
+        {
+            if (Directory.Exists(tmp)) Directory.Delete(tmp, true);
+            Directory.CreateDirectory(tmp);
+            var asm = System.Reflection.Assembly.GetExecutingAssembly();
+            using (Stream s = asm.GetManifestResourceStream("Payload.Data"))
+            using (ZipArchive z = new ZipArchive(s))
+                z.ExtractToDirectory(tmp);
+        }
+        return tmp;
     }
 
     public static string DetectInstance()
