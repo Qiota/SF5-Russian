@@ -1,0 +1,14 @@
+{
+  "ae2.guidebook.ContentFrom": "Контент от",
+  "block.ae2.crystal_resonance_generator": "Кристаллический резонансный генератор",
+  "entity.minecraft.villager.ae2.fluix_researcher": "Исследователь флюикса",
+  "gui.ae2.EnergyGenerationCapacity": "Мощность генерации: %s",
+  "gui.ae2.NoChannel": "Нет канала",
+  "gui.ae2.SearchTooltipToolTips": "Используйте # для поиска по подсказкам (#looting)",
+  "gui.ae2.units.fe": "FE",
+  "gui.ae2.units.rf": "RF",
+  "gui.tooltips.ae2.InscriberBufferHigh": "Стопка до 64",
+  "gui.tooltips.ae2.InscriberBufferLow": "Стопка до 4",
+  "gui.tooltips.ae2.InscriberBufferSize": "Размер стопки входного слота",
+  "waila.ae2.Suppressed": "Подавлено"
+}

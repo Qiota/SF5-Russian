@@ -1,0 +1,12 @@
+{
+  "name": "Улучшение «Наездник»",
+  "icon": "modulargolems:mount_upgrade",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:mount_upgrade",
+      "text": "Только для голема-пса. Не может атаковать и не является целью. Больше здоровья, скорости и силы прыжка."
+    }
+  ]
+}

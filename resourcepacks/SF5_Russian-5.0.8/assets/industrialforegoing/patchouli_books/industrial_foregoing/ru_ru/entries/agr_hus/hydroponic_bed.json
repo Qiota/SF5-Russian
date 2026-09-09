@@ -1,0 +1,17 @@
+{
+  "name": "Гидропонная грядка",
+  "icon": "industrialforegoing:hydroponic_bed",
+  "category": "industrialforegoing:agriculture_husbandry",
+  "sortnum": 16,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Машина с энергией и $(6)водой$() (или $(6)лавой$() для адских культур) немного ускоряет рост. $(br2)При подаче малых количеств $(l:resource_production/ether_gas)эфирного газа$() культуры растут гораздо быстрее и пересаживаются автоматически."
+    },
+    {
+      "type": "crafting",
+      "recipe": "industrialforegoing:hydroponic_bed"
+    }
+  ]
+}

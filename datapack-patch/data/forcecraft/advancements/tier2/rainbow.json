@@ -1,0 +1,28 @@
+{
+  "display": {
+    "title": {
+      "text": "Радуга"
+    },
+    "description": {
+      "text": "Тёмно-синий самоцвет в ножницах откроет мне радугу других возможностей"
+    },
+    "icon": {
+      "item": "minecraft:blue_dye"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "forcecraft:tier2/luck",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

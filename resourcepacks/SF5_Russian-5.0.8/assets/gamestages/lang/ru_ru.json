@@ -1,0 +1,7 @@
+{
+  "commands.gamestage.info.stages": "У %s следующие стадии. %s",
+  "commands.gamestage.reloadfakes.info": "Перезагружены стадии фейковых игроков.",
+  "commands.gamestage.reloadknown.info": "Загружено %d известных стадий.",
+  "commands.gamestage.all.target": "Вы открыли все известные стадии!",
+  "commands.gamestage.all.sender": "%s открыл все известные стадии!"
+}

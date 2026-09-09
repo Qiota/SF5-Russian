@@ -1,0 +1,15 @@
+{
+  "colorfulskies.commands.color.moon.success": "Цвет луны установлен: %s",
+  "colorfulskies.commands.color.moon.reset": "Сбросить цвет луны",
+  "colorfulskies.commands.color.cloud.success": "Цвет облаков установлен: %s",
+  "colorfulskies.commands.color.cloud.reset": "Сбросить цвет облаков",
+  "colorfulskies.commands.color.sun.success": "Цвет солнца установлен: %s",
+  "colorfulskies.commands.color.sun.reset": "Сбросить цвет солнца",
+  "colorfulskies.commands.color.sunrise.success": "Цвет восхода установлен: %s",
+  "colorfulskies.commands.color.sunrise.reset": "Сбросить цвет восхода",
+  "colorfulskies.commands.color.invalid_hex": "Неверный HEX-код",
+  "colorfulskies.commands.sunrise.success": "Визуал восхода отключён",
+  "colorfulskies.commands.sunrise.success1": "Визуал восхода включён",
+  "colorfulskies.commands.color.sky.success": "Цвет неба установлен: %s",
+  "colorfulskies.commands.color.sky.reset": "Сбросить цвет неба"
+}

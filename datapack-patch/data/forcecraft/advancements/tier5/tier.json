@@ -1,0 +1,27 @@
+{
+  "display": {
+    "title": {
+      "text": "Уровень 5"
+    },
+    "description": {
+      "text": "Вставьте остроумное описание знаний"
+    },
+    "icon": {
+      "item": "forcecraft:infuser"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "forcecraft:root",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

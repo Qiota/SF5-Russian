@@ -1,0 +1,13 @@
+{
+  "name": "Бесконечный запускатель",
+  "icon": "industrialforegoing:infinity_launcher",
+  "category": "industrialforegoing:tools",
+  "sortnum": 3,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Бесконечный запускатель ловит и выпускает сущностей из инструмента заточения мобов на расстоянии. Выбрав режим в интерфейсе и выстрелив, вы выпустите или поймаете моба с помощью ИЗМ в инвентаре."
+    }
+  ]
+}

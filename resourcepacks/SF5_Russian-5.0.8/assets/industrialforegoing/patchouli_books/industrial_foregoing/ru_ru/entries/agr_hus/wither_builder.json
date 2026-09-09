@@ -1,0 +1,16 @@
+{
+  "name": "Строитель визера",
+  "icon": "industrialforegoing:wither_builder",
+  "category": "industrialforegoing:agriculture_husbandry",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Машина для спавна визеров. При подаче энергии, $(6)3 черепов визер-скелетов$() и $(6)4 песка душ$() полностью выстраивает конструкцию призыва визера в рабочей зоне."
+    },
+    {
+      "type": "crafting",
+      "recipe": "industrialforegoing:wither_builder"
+    }
+  ]
+}

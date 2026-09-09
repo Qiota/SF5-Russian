@@ -1,0 +1,13 @@
+{
+  "flag": "mod:twilightforest",
+  "name": "Улучшение «Железное дерево»",
+  "icon": "modulargolems:ironwood",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:ironwood",
+      "text": "Больше бонуса лечения в Сумеречном лесу. Макс.: 5"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "advancement": "spelled:adjective_ater",
+  "category": "spelled:colors",
+  "icon": "spelled:ancient_knowledge_tome",
+  "name": "info.spelled.book.colors.ater.name",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "info.spelled.book.colors.ater.text"
+    }
+  ],
+  "secret": true
+}

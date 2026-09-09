@@ -1,0 +1,12 @@
+{
+  "name": "Улучшение «Слабость»",
+  "icon": "modulargolems:weak",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:weak",
+      "text": "Накладывает 3 сек. слабости на атакующих и атакуемых мобов. Уровень равен уровню улучшения. Макс.: 3"
+    }
+  ]
+}

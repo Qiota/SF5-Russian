@@ -1,0 +1,16 @@
+{
+  "name": "Маршрут буксира",
+  "icon": "littlelogistics:tug_route",
+  "category": "littlelogistics:items",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:tug_route",
+      "text": "Предмет хранит маршрут буксира. В слоте маршрута буксир идёт по точкам по порядку от узла 0."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ПКМ по координатам добавляет узел в конец маршрута (в середину нельзя). ПКМ по существующему узлу удаляет его. Узлы видны лучами, если предмет в руке."
+    }
+  ]
+}

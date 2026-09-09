@@ -1,0 +1,23 @@
+{
+  "block.chargers.charger_creative": "Креативный зарядник",
+  "block.chargers.charger_t1": "Зарядник I уровня",
+  "block.chargers.charger_t2": "Зарядник II уровня",
+  "block.chargers.charger_t3": "Зарядник III уровня",
+  "block.chargers.charger_t4": "Зарядник IV уровня",
+  "block.chargers.wireless_charger": "Беспроводной зарядник",
+  "block.chargers.wireless_charger.desc": "Можно отключить сигналом редстоуна",
+  "chargers.chat.disabled": "Выключено",
+  "chargers.chat.enabled": "Включено",
+  "chargers.chat.stored.infinite.info": "Энергия: ∞ FE",
+  "chargers.chat.stored.info": "Энергия: %s/%s FE",
+  "chargers.chat.wireless_charger.info": "Статус: %s, энергия: %s/%s FE",
+  "chargers.gui.details.in": "Вход: %s FE/т",
+  "chargers.gui.details.out": "Выход: %s FE/т",
+  "chargers.gui.energy": "%s/%s FE",
+  "chargers.gui.energy.infinite": "∞ FE",
+  "chargers.gui.io": "Ввод/вывод: %s FE/т",
+  "chargers.gui.io.more": "Зажмите Shift для подробностей о вводе/выводе",
+  "chargers.gui.max_in": "Макс. вход: %s FE/т",
+  "chargers.gui.max_out": "Макс. выход: %s FE/т",
+  "itemGroup.chargers.chargers": "Зарядники"
+}

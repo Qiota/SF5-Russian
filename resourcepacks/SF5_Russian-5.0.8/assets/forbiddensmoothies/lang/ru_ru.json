@@ -1,0 +1,17 @@
+{
+  "block.forbiddensmoothies.blender": "Блендер",
+  "block.forbiddensmoothies.printer": "Принтер",
+  "item.forbiddensmoothies.ugly_steel_plating": "Уродливая стальная пластина",
+  "container.forbiddensmoothies.blender": "Блендер",
+  "container.forbiddensmoothies.printer": "Принтер",
+  "itemGroup.forbiddensmoothies.forbiddensmoothies": "Запретные смузи",
+  "gui.forbiddensmoothies.lockButton": "Переключить блокировку входа",
+  "tooltip.forbiddensmoothies.lockInputs": "Заблокировать входные слоты",
+  "tooltip.forbiddensmoothies.unlockInputs": "Разблокировать входные слоты",
+  "tooltip.forbiddensmoothies.energyStored": "%d FE",
+  "tooltip.forbiddensmoothies.energyConsumed": "Потребляет %d FE/т",
+  "tooltip.forbiddensmoothies.ugly_steel_plating": "Примените к блендеру или принтеру, чтобы сделать его уродливым.",
+  "jei.forbiddensmoothies.printer": "Принтер",
+  "jei.forbiddensmoothies.blender": "Блендер",
+  "config.forbiddensmoothies": "Запретные смузи"
+}

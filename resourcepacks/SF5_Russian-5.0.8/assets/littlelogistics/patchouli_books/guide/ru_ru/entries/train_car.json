@@ -1,0 +1,19 @@
+{
+  "name": "Пассажирский вагон",
+  "icon": "littlelogistics:seater_car",
+  "category": "littlelogistics:trains",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "littlelogistics:seater_car",
+      "scale": 0.6,
+      "offset": 0.5,
+      "text": "Простой вагон на одного игрока или моба."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:seater_car",
+      "text": "Как ванильные вагонетки, высаживается активирующими рельсами"
+    }
+  ]
+}

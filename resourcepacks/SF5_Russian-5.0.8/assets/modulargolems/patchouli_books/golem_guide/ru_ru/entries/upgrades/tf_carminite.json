@@ -1,0 +1,13 @@
+{
+  "flag": "mod:twilightforest",
+  "name": "Улучшение «Карминит»",
+  "icon": "modulargolems:carminite",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:carminite",
+      "text": "После получения урона ненадолго становится невидимым и неуязвимым, как исчезающий блок. Макс.: 5"
+    }
+  ]
+}

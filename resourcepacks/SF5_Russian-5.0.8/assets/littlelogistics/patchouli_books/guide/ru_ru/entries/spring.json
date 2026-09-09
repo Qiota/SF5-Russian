@@ -1,0 +1,12 @@
+{
+  "name": "Сцепка",
+  "icon": "littlelogistics:spring",
+  "category": "littlelogistics:items",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:spring",
+      "text": "Соединяет суда или вагоны. Кликайте ПКМ по транспорту по порядку, чтобы создать состав. В составе только один буксир/локомотив и без колец. Рвётся при большом расстоянии."
+    }
+  ]
+}

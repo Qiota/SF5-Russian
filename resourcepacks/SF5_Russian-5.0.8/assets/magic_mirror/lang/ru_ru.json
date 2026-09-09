@@ -1,0 +1,6 @@
+{
+  "block.magic_mirror.magic_mirror_core": "Волшебное зеркало",
+  "block.magic_mirror.magic_mirror_inactive": "Волшебное зеркало (неактивно)",
+  "block.magic_mirror.magic_mirror_part": "Волшебное зеркало",
+  "commands.magic_mirror.debug.reflections": "Всего отражений: %d\nАктивных отражений: %d"
+}

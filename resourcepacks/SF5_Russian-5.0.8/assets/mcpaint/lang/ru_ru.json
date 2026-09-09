@@ -1,0 +1,23 @@
+{
+  "item.mcpaint.brush": "Кисть",
+  "item.mcpaint.stamp": "Штамп",
+  "block.mcpaint.canvas": "Разрисованный блок",
+  "mcpaint.tooltip.stamp.paint": "Shift+клик по воздуху, чтобы очистить",
+  "mcpaint.tooltip.stamp.nopaint": "Shift+клик по блоку с краской, чтобы скопировать",
+  "mcpaint.drawsetup": "Установить разрешение изображения",
+  "mcpaint.drawgui": "Нарисовать изображение",
+  "mcpaint.gui.pencil": "Карандаш",
+  "mcpaint.gui.fill": "Заливка",
+  "mcpaint.gui.eraser": "Ластик",
+  "mcpaint.gui.pick_color": "Пипетка",
+  "mcpaint.gui.undo": "Отменить",
+  "mcpaint.gui.redo": "Вернуть",
+  "mcpaint.gui.red": "красный: ",
+  "mcpaint.gui.green": "зелёный: ",
+  "mcpaint.gui.blue": "синий: ",
+  "mcpaint.gui.alpha": "прозрачность: ",
+  "mcpaint.gui.rright": "Повернуть вправо",
+  "mcpaint.gui.rleft": "Повернуть влево",
+  "mcpaint.gui.export": "Экспорт",
+  "mcpaint.gui.saved": "Рисунок сохранён как %s"
+}

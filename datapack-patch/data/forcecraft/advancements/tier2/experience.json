@@ -1,0 +1,28 @@
+{
+  "display": {
+    "title": {
+      "text": "Опыт"
+    },
+    "description": {
+      "text": "Книга, пожалуй, сможет вместить весь мой лишний опыт"
+    },
+    "icon": {
+      "item": "minecraft:experience_bottle"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "forcecraft:tier2/tier",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

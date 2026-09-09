@@ -1,0 +1,17 @@
+{
+  "name": "Накладыватель чар",
+  "icon": "industrialforegoing:enchantment_applicator",
+  "category": "industrialforegoing:misc",
+  "sortnum": 3,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Работает как наковальня, но вместо опыта использует $(l:agr_husb/essence)эссенцию$(). При большой стоимости берёт эссенцию из бака сверху."
+    },
+    {
+      "type": "crafting",
+      "recipe": "industrialforegoing:enchantment_applicator"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Золото",
+  "icon": "minecraft:gold_ingot",
+  "category": "modulargolems:materials",
+  "sortnum": 103,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:gold_ingot",
+      "text": "Основной материал частей из золота. Даёт регенерацию здоровья, но очень низкие характеристики.$(br2)Рекомендуется для корпуса или ног ради регенерации, а вторую часть корпуса/ног берите из другого материала ради здоровья."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:metal_golem_holder{golem_materials:[{part:\"modulargolems:metal_golem_arm\",material:\"modulargolems:gold\"},{part:\"modulargolems:metal_golem_body\",material:\"modulargolems:gold\"},{part:\"modulargolems:metal_golem_arm\",material:\"modulargolems:gold\"},{part:\"modulargolems:metal_golem_legs\",material:\"modulargolems:gold\"}]}",
+      "text": "Нажмите R в JEI, чтобы посмотреть характеристики частей из этого материала."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:humanoid_golem_holder{golem_materials:[{part:\"modulargolems:humanoid_golem_body\",material:\"modulargolems:gold\"},{part:\"modulargolems:humanoid_golem_arms\",material:\"modulargolems:gold\"},{part:\"modulargolems:humanoid_golem_legs\",material:\"modulargolems:gold\"}]}",
+      "text": "Нажмите R в JEI, чтобы посмотреть характеристики частей из этого материала."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:dog_golem_holder{golem_materials:[{part:\"modulargolems:dog_golem_body\",material:\"modulargolems:gold\"},{part:\"modulargolems:dog_golem_legs\",material:\"modulargolems:gold\"}]}",
+      "text": "Нажмите R в JEI, чтобы посмотреть характеристики частей из этого материала."
+    }
+  ]
+}

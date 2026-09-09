@@ -1,0 +1,13 @@
+{
+  "flag": "mod:l2complements",
+  "name": "Улучшение «Иссушающая броня»",
+  "icon": "modulargolems:force_field",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:force_field",
+      "text": "Иммунитет к снарядам с их отражением. На големе виден вихрь иссушающей брони. Макс.: 1"
+    }
+  ]
+}

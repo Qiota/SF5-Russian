@@ -1,0 +1,29 @@
+{
+  "flag": "mod:twilightforest",
+  "name": "Стальной лист",
+  "icon": "twilightforest:steeleaf_ingot",
+  "category": "modulargolems:materials",
+  "sortnum": 202,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "twilightforest:steeleaf_ingot",
+      "text": "Основной материал частей из стального листа. Высокая атака, но мало здоровья. Рекомендуется для рук.$(br2)В Сумеречном лесу — бонус к лечению и урону."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:metal_golem_holder{golem_materials:[{part:\"modulargolems:metal_golem_arm\",material:\"twilightforest:steeleaf\"},{part:\"modulargolems:metal_golem_body\",material:\"twilightforest:steeleaf\"},{part:\"modulargolems:metal_golem_arm\",material:\"twilightforest:steeleaf\"},{part:\"modulargolems:metal_golem_legs\",material:\"twilightforest:steeleaf\"}]}",
+      "text": "Нажмите R в JEI, чтобы посмотреть характеристики частей из этого материала."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:humanoid_golem_holder{golem_materials:[{part:\"modulargolems:humanoid_golem_body\",material:\"twilightforest:steeleaf\"},{part:\"modulargolems:humanoid_golem_arms\",material:\"twilightforest:steeleaf\"},{part:\"modulargolems:humanoid_golem_legs\",material:\"twilightforest:steeleaf\"}]}",
+      "text": "Нажмите R в JEI, чтобы посмотреть характеристики частей из этого материала."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:dog_golem_holder{golem_materials:[{part:\"modulargolems:dog_golem_body\",material:\"twilightforest:steeleaf\"},{part:\"modulargolems:dog_golem_legs\",material:\"twilightforest:steeleaf\"}]}",
+      "text": "Нажмите R в JEI, чтобы посмотреть характеристики частей из этого материала."
+    }
+  ]
+}

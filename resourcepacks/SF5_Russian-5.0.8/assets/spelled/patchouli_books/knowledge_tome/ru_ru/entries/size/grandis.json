@@ -1,0 +1,17 @@
+{
+  "advancement": "spelled:adjective_grandis",
+  "category": "spelled:size",
+  "icon": "spelled:ancient_knowledge_tome",
+  "name": "info.spelled.book.size.grandis.name",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "info.spelled.book.size.grandis.text"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "info.spelled.book.size.grandis.text2"
+    }
+  ],
+  "secret": true
+}

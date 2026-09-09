@@ -1,0 +1,17 @@
+{
+  "name": "Детектор мобов",
+  "icon": "industrialforegoing:mob_detector",
+  "category": "industrialforegoing:misc",
+  "sortnum": 6,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Машина считает сущностей перед собой и выдаёт назад редстоун-сигнал с силой, равной числу обнаруженных сущностей."
+    },
+    {
+      "type": "crafting",
+      "recipe": "industrialforegoing:mob_detector"
+    }
+  ]
+}

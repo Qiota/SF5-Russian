@@ -1,0 +1,12 @@
+{
+  "name": "Улучшение «Замедление»",
+  "icon": "modulargolems:slow",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:slow",
+      "text": "Накладывает 3 сек. замедления на атакующих и атакуемых мобов. Уровень равен уровню улучшения. Макс.: 3"
+    }
+  ]
+}

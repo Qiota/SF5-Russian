@@ -1,0 +1,17 @@
+{
+  "name": "Жезл возврата",
+  "icon": "modulargolems:retrieval_wand",
+  "category": "modulargolems:golems",
+  "sortnum": 20,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Клик по големам возвращает их в инвентарь, как клик пустой рукой.$(br2)Клик в воздух возвращает всех големов в радиусе 20 блоков.$(br2)Shift+клик возвращает голема, на которого смотрите, до 64 блоков."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "modulargolems:retrieval_wand",
+      "text": "Жезл массового возврата големов."
+    }
+  ]
+}

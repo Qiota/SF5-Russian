@@ -1,0 +1,17 @@
+{
+  "name": "Жезл призыва",
+  "icon": "modulargolems:summon_wand",
+  "category": "modulargolems:golems",
+  "sortnum": 22,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Клик призывает голема на выбранный блок из второй руки или инвентаря.$(br2)Shift+клик призывает всех големов из инвентаря вокруг вас."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "modulargolems:summon_wand",
+      "text": "Жезл массового призыва големов."
+    }
+  ]
+}

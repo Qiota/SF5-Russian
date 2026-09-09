@@ -1,0 +1,28 @@
+{
+  "display": {
+    "title": {
+      "text": "Удача"
+    },
+    "description": {
+      "text": "Держу пари, начинка печенья с предсказанием принесёт мне удачу"
+    },
+    "icon": {
+      "item": "forcecraft:fortune_cookie"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "forcecraft:tier2/holding",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

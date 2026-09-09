@@ -1,0 +1,12 @@
+{
+  "name": "Улучшение «Плавание»",
+  "icon": "modulargolems:swim",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:swim",
+      "text": "Голем умеет плавать."
+    }
+  ]
+}

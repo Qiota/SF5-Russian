@@ -1,0 +1,16 @@
+{
+  "name": "Металлический голем",
+  "icon": "modulargolems:metal_golem_holder",
+  "category": "modulargolems:golems",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Металлический голем похож на ванильного железного голема. Кроме ремонта на наковальне, его можно лечить напрямую, применяя слитки материала корпуса на голема.$(br2)На металлического голема надевают особую броню с помощью жезла команд."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "modulargolems:metal_golem_holder"
+    }
+  ]
+}

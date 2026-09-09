@@ -1,0 +1,13 @@
+{
+  "flag": "mod:cataclysm",
+  "name": "Улучшение «Незеритовая чудовищность»",
+  "icon": "modulargolems:netherite_monstrosity_earthquake",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:netherite_monstrosity_earthquake",
+      "text": "Прыгает и вызывает землетрясение при приземлении. Макс.: 1"
+    }
+  ]
+}

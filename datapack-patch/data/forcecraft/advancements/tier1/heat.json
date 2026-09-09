@@ -1,0 +1,28 @@
+{
+  "display": {
+    "title": {
+      "text": "Жар"
+    },
+    "description": {
+      "text": "Золотые источники энергии работают в печи. Что они дадут инструменту?"
+    },
+    "icon": {
+      "item": "forcecraft:golden_power_source"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "forcecraft:tier1/tier",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

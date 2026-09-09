@@ -1,0 +1,12 @@
+{
+  "name": "Улучшение «Невосприимчивость к игроку»",
+  "icon": "modulargolems:player",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:player",
+      "text": "Иммунитет к дружественному огню (урону от тех, кого големы не атакуют). Макс.: 1"
+    }
+  ]
+}

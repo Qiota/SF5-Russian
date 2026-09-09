@@ -1,0 +1,29 @@
+{
+  "flag": "mod:l2complements",
+  "name": "Тотемное золото",
+  "icon": "l2complements:totemic_gold_ingot",
+  "category": "modulargolems:materials",
+  "sortnum": 401,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "l2complements:totemic_gold_ingot",
+      "text": "Основной материал тотемных частей. Безумная регенерация при приличном здоровье. Рекомендуется для корпуса. Сделайте голема неуязвимым!"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:metal_golem_holder{golem_materials:[{part:\"modulargolems:metal_golem_arm\",material:\"l2complements:totemic_gold\"},{part:\"modulargolems:metal_golem_body\",material:\"l2complements:totemic_gold\"},{part:\"modulargolems:metal_golem_arm\",material:\"l2complements:totemic_gold\"},{part:\"modulargolems:metal_golem_legs\",material:\"l2complements:totemic_gold\"}]}",
+      "text": "Нажмите R в JEI, чтобы посмотреть характеристики частей из этого материала."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:humanoid_golem_holder{golem_materials:[{part:\"modulargolems:humanoid_golem_body\",material:\"l2complements:totemic_gold\"},{part:\"modulargolems:humanoid_golem_arms\",material:\"l2complements:totemic_gold\"},{part:\"modulargolems:humanoid_golem_legs\",material:\"l2complements:totemic_gold\"}]}",
+      "text": "Нажмите R в JEI, чтобы посмотреть характеристики частей из этого материала."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:dog_golem_holder{golem_materials:[{part:\"modulargolems:dog_golem_body\",material:\"l2complements:totemic_gold\"},{part:\"modulargolems:dog_golem_legs\",material:\"l2complements:totemic_gold\"}]}",
+      "text": "Нажмите R в JEI, чтобы посмотреть характеристики частей из этого материала."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Камера растворения",
+  "icon": "industrialforegoing:dissolution_chamber",
+  "category": "industrialforegoing:basics",
+  "sortnum": 6,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Мощная машина для крафта из до $(6)8$() предметов и/или $(6)1$() жидкости. Выдаёт предметы и/или жидкости. $(br2)Все рецепты бесформенные — ингредиенты в любых слотах. $(br2)При активном рецепте машина блокирует слоты от лишних предметов."
+    },
+    {
+      "type": "crafting",
+      "recipe": "industrialforegoing:dissolution_chamber"
+    }
+  ]
+}

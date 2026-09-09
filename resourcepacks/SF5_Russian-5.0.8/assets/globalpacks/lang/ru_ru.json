@@ -1,0 +1,4 @@
+{
+  "globalpacks.source.global": "[Глобальный] %s",
+  "globalpacks.source.global_opt": "[Глобальный (необязательный)] %s"
+}

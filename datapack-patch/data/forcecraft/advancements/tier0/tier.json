@@ -1,0 +1,36 @@
+{
+  "display": {
+    "title": {
+      "text": "Уровень 0"
+    },
+    "description": {
+      "text": "Настои, доступные по умолчанию"
+    },
+    "icon": {
+      "item": "forcecraft:infuser"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "forcecraft:root",
+  "criteria": {
+    "crafting_table": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "forcecraft:infuser"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "crafting_table"
+    ]
+  ]
+}

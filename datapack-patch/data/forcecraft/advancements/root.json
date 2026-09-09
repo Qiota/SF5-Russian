@@ -1,0 +1,37 @@
+{
+  "display": {
+    "title": {
+      "text": "ForceCraft"
+    },
+    "description": {
+      "text": "Создайте инфузер, объединив силовой жезл и стол зачарования"
+    },
+    "icon": {
+      "item": "forcecraft:infuser"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "crafting_table": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "forcecraft:infuser"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "crafting_table"
+    ]
+  ]
+}

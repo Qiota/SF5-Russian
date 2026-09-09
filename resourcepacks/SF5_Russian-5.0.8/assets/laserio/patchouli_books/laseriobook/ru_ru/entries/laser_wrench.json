@@ -1,0 +1,26 @@
+{
+  "name": "Лазерный ключ",
+  "icon": "laserio:laser_wrench",
+  "sortnum": 1,
+  "category": "laserio:items",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Лазерный ключ в основном соединяет блоки.$(br2)$(l:laserio:laser_node)Узлы$(/l) и $(l:laserio:laser_connector)соединители$(/l) соединяются Shift+ПКМ для выбора блока, затем ПКМ по другому блоку.$(br2)Макс. дальность соединения — 8 блоков."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Лазерный ключ",
+      "images": [
+        "laserio:textures/book/entries/laser_wrench.png"
+      ],
+      "border": true,
+      "text": "Выбранный блок подсвечен зелёным."
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Лазерный ключ",
+      "recipe": "laserio:laser_wrench"
+    }
+  ]
+}

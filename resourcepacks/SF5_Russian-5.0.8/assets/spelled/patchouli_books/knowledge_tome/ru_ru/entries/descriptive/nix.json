@@ -1,0 +1,17 @@
+{
+  "advancement": "spelled:adjective_nix",
+  "category": "spelled:descriptions",
+  "icon": "spelled:ancient_knowledge_tome",
+  "name": "info.spelled.book.descriptive.nix.name",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "info.spelled.book.descriptive.nix.text"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "info.spelled.book.descriptive.nix.text2"
+    }
+  ],
+  "secret": true
+}

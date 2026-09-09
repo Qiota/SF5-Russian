@@ -1,0 +1,29 @@
+{
+  "flag": "mod:twilightforest",
+  "name": "Рыцарский металл",
+  "icon": "twilightforest:knightmetal_ingot",
+  "category": "modulargolems:materials",
+  "sortnum": 203,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "twilightforest:knightmetal_ingot",
+      "text": "Основной материал частей из рыцарского металла. Сильные шипы и высокие характеристики. Рекомендуется для корпуса или ног.$(br2)В Сумеречном лесу — бонус к лечению и урону."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:metal_golem_holder{golem_materials:[{part:\"modulargolems:metal_golem_arm\",material:\"twilightforest:knightmetal\"},{part:\"modulargolems:metal_golem_body\",material:\"twilightforest:knightmetal\"},{part:\"modulargolems:metal_golem_arm\",material:\"twilightforest:knightmetal\"},{part:\"modulargolems:metal_golem_legs\",material:\"twilightforest:knightmetal\"}]}",
+      "text": "Нажмите R в JEI, чтобы посмотреть характеристики частей из этого материала."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:humanoid_golem_holder{golem_materials:[{part:\"modulargolems:humanoid_golem_body\",material:\"twilightforest:knightmetal\"},{part:\"modulargolems:humanoid_golem_arms\",material:\"twilightforest:knightmetal\"},{part:\"modulargolems:humanoid_golem_legs\",material:\"twilightforest:knightmetal\"}]}",
+      "text": "Нажмите R в JEI, чтобы посмотреть характеристики частей из этого материала."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:dog_golem_holder{golem_materials:[{part:\"modulargolems:dog_golem_body\",material:\"twilightforest:knightmetal\"},{part:\"modulargolems:dog_golem_legs\",material:\"twilightforest:knightmetal\"}]}",
+      "text": "Нажмите R в JEI, чтобы посмотреть характеристики частей из этого материала."
+    }
+  ]
+}

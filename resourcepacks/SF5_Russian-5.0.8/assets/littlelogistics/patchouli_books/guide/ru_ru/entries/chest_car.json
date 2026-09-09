@@ -1,0 +1,19 @@
+{
+  "name": "Грузовой вагон",
+  "icon": "littlelogistics:chest_car",
+  "category": "littlelogistics:trains",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "littlelogistics:chest_car",
+      "scale": 0.6,
+      "offset": 0.5,
+      "text": "Простой вагон для предметов, как сундук-вагонетка."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:chest_car",
+      "text": "Вагон должен быть в доке и в составе, чтобы работать с воронками."
+    }
+  ]
+}

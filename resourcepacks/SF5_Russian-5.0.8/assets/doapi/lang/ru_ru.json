@@ -1,0 +1,23 @@
+{
+  "block.doapi.standard": "Знамя завершителя",
+  "block.doapi.wall_standard": "Настенное знамя завершителя",
+  "sound.doapi.cabinet_close": "Закрытие шкафа",
+  "sound.doapi.cabinet_open": "Открытие шкафа",
+  "sound.doapi.drawer_close": "Закрытие ящика",
+  "sound.doapi.drawer_open": "Открытие ящика",
+  "sound.doapi.cake_cut": "Нарезание торта",
+  "sound.doapi.typewriter": "Печать на печатной машинке",
+  "sound.doapi.dinner_bell": "Звон обеденного колокольчика",
+  "sound.doapi.brewstation_ambient": "Гул варочной станции",
+  "sound.doapi.brewstation_oven": "Треск печи",
+  "sound.doapi.brewstation_timer": "Тиканье таймера",
+  "sound.doapi.brewstation_kettle": "Лопающиеся пузырьки",
+  "sound.doapi.brewstation_whistle": "Свист свистка",
+  "sound.doapi.breath": "Дыхание",
+  "sound.doapi.beer_elemental_death": "Смерть хмельного элементаля",
+  "sound.doapi.beer_elemental_ambient": "Хмельной элементаль",
+  "sound.doapi.beer_elemental_hurt": "Урон хмельному элементалю",
+  "sound.doapi.beer_elemental_attack": "Атака хмельного элементаля",
+  "sound.doapi.timer_ticking": "Тиканье таймера",
+  "pack.source.builtinMod": "встроенный: %s"
+}

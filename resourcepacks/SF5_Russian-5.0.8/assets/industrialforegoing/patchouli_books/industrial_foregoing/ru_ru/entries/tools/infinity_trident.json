@@ -1,0 +1,13 @@
+{
+  "name": "Бесконечный трезубец",
+  "icon": "industrialforegoing:infinity_trident",
+  "category": "industrialforegoing:tools",
+  "sortnum": 3,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Бесконечный трезубец раскрывает истинную силу трезубца. Повышение уровня открывает уровни $(6)верности$(), $(6)тяги$() и $(6)громовержца$(). $(br2)Громовержец и урон действуют по площади."
+    }
+  ]
+}

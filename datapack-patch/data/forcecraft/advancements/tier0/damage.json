@@ -1,0 +1,37 @@
+{
+  "display": {
+    "title": {
+      "text": "Урон"
+    },
+    "description": {
+      "text": "Интересно, придадут ли когти летучей мыши остроты моему мечу"
+    },
+    "icon": {
+      "item": "forcecraft:claw"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "forcecraft:tier0/tier",
+  "criteria": {
+    "crafting_table": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "forcecraft:infuser"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "crafting_table"
+    ]
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "display": {
+    "title": {
+      "text": "Сила"
+    },
+    "description": {
+      "text": "Возможно, силовой самородок добавит мистической силы чему-то острому"
+    },
+    "icon": {
+      "item": "forcecraft:force_nugget"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "forcecraft:tier0/damage",
+  "criteria": {
+    "crafting_table": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "forcecraft:infuser"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "crafting_table"
+    ]
+  ]
+}

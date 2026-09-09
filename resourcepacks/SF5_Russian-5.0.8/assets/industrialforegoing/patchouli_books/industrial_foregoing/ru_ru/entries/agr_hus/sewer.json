@@ -1,0 +1,17 @@
+{
+  "name": "Канализация",
+  "icon": "industrialforegoing:sewer",
+  "category": "industrialforegoing:agriculture_husbandry",
+  "sortnum": 12,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Машина собирает $(l:agr_hus/sewage)сточные воды$() от животных и опыт, превращая их в эссенцию."
+    },
+    {
+      "type": "crafting",
+      "recipe": "industrialforegoing:sewer"
+    }
+  ]
+}

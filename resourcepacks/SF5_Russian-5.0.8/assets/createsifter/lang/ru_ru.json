@@ -1,0 +1,16 @@
+{
+  "block.createsifter.brass_sifter": "Латунное сито",
+  "block.createsifter.crushed_end_stone": "Дроблёный камень Края",
+  "block.createsifter.dust": "Блок пыли",
+  "create.createsifter.recipe.sifting.minimumspeed": "%1$s об/мин",
+  "createsifter.ponder.sifter.header": "Просеивание блоков",
+  "createsifter.ponder.sifter.text_1": "Сито обрабатывает предметы просеиванием",
+  "createsifter.ponder.sifter.text_2": "Их можно запитать сбоку с помощью шестерней",
+  "createsifter.ponder.sifter.text_3": "Бросайте или вставляйте предметы сверху",
+  "createsifter.ponder.sifter.text_4": "Через время результат можно забрать ПКМ",
+  "createsifter.ponder.sifter.text_5": "Продукцию также можно извлекать автоматикой",
+  "createsifter.recipe.sifting.brass_required": "Нужно латунное сито",
+  "createsifter.recipe.sifting.waterlogged": "Под водой",
+  "item.createsifter.advanced_brass_mesh": "Улучшенная латунная сетка",
+  "item.createsifter.advanced_custom_mesh": "Улучшенная особая сетка"
+}

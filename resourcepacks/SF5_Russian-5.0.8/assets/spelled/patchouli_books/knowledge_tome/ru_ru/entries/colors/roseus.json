@@ -1,0 +1,13 @@
+{
+  "advancement": "spelled:adjective_roseus",
+  "category": "spelled:colors",
+  "icon": "spelled:ancient_knowledge_tome",
+  "name": "info.spelled.book.colors.roseus.name",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "info.spelled.book.colors.roseus.text"
+    }
+  ],
+  "secret": true
+}
