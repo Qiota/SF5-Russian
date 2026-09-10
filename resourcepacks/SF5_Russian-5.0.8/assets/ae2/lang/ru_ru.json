@@ -10,5 +10,10 @@
   "gui.tooltips.ae2.InscriberBufferHigh": "Стопка до 64",
   "gui.tooltips.ae2.InscriberBufferLow": "Стопка до 4",
   "gui.tooltips.ae2.InscriberBufferSize": "Размер стопки входного слота",
-  "waila.ae2.Suppressed": "Подавлено"
+  "waila.ae2.Suppressed": "Подавлено",
+  "gui.ae2.NetworkDetails": "Сведения о сети (каналов: %d)",
+  "ae2.rei_jei_integration.flowing_fluid_name": "%s (текучая)",
+  "theoneprobe.ae2.channels": "Каналов: %1$d",
+  "chat.ae2.ChannelModeCurrent": "Текущий режим канала: %s",
+  "waila.ae2.Channels": "Каналов: %1$d"
 }

@@ -42,5 +42,8 @@
   "gui.sophisticatedstorage.buttons.decoration_inheritance_off": "Не использовать материал повторно",
   "gui.sophisticatedstorage.buttons.pick_color": "Нажмите, чтобы выбрать цвет",
   "gui.sophisticatedstorage.status.infinity_upgrade_only_admin_break": "Только админы могут ломать хранилище с улучшением бесконечности",
-  "gui.sophisticatedstorage.tooltip.parts_stored": "Частей сохранено"
+  "gui.sophisticatedstorage.tooltip.parts_stored": "Частей сохранено",
+  "block.sophisticatedstorage.barrel": "%s%sБочка",
+  "block.sophisticatedstorage.copper_barrel": "%s%sМедная бочка",
+  "block.sophisticatedstorage.iron_barrel": "%s%sЖелезная бочка"
 }

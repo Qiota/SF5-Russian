@@ -194,5 +194,6 @@
   "subtitle.immersiveengineering.saw_empty": "Лесопилка воет без дерева",
   "subtitle.immersiveengineering.saw_full": "Лесопилка визжит, пиля дерево",
   "subtitle.immersiveengineering.saw_shutdown": "Диск лесопилки останавливается",
-  "subtitle.immersiveengineering.saw_startup": "Диск лесопилки раскручивается"
+  "subtitle.immersiveengineering.saw_startup": "Диск лесопилки раскручивается",
+  "ie.manual.entry.minerals_desc": "%1$s\nОна состоит из: %2$s.\n\nЕё добыча:%3$s"
 }
