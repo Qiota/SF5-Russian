@@ -374,7 +374,7 @@ public class SetupForm : Form
     {
         root = root_;
         Text = "Русификатор SkyFactory 5 v" + RuSetup.Ver + " by Qiota";
-        Width = 560;
+        Width = 700;
         Height = 420;
         FormBorderStyle = FormBorderStyle.FixedDialog;
         MaximizeBox = false;
@@ -390,29 +390,29 @@ public class SetupForm : Form
             if (File.Exists(ip)) pic.Image = System.Drawing.Image.FromFile(ip);
         }
         catch { }
-        Label t = new Label() { Text = "Русификатор SkyFactory 5 (v" + RuSetup.Ver + ")", Top = 10, Left = 74, Width = 460, Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold), ForeColor = System.Drawing.Color.FromArgb(30, 60, 120) };
-        Label sub = new Label() { Text = "Полный перевод модпака by Qiota", Top = 36, Left = 74, Width = 460, ForeColor = System.Drawing.Color.Gray };
-        Label d = new Label() { Text = "Папка instance (где лежат mods, resourcepacks, config):", Top = 52, Left = 14, Width = 520 };
-        pathBox = new TextBox() { Top = 74, Left = 14, Width = 360 };
-        Button browse = new Button() { Text = "Обзор...", Top = 72, Left = 382, Width = 75 };
+        Label t = new Label() { Text = "Русификатор SkyFactory 5 (v" + RuSetup.Ver + ")", Top = 10, Left = 74, Width = 600, Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold), ForeColor = System.Drawing.Color.FromArgb(30, 60, 120) };
+        Label sub = new Label() { Text = "Полный перевод модпака by Qiota", Top = 36, Left = 74, Width = 600, ForeColor = System.Drawing.Color.Gray };
+        Label d = new Label() { Text = "Папка instance (где лежат mods, resourcepacks, config):", Top = 52, Left = 14, Width = 660 };
+        pathBox = new TextBox() { Top = 74, Left = 14, Width = 470 };
+        Button browse = new Button() { Text = "Обзор...", Top = 72, Left = 492, Width = 75 };
         browse.Click += delegate {
             FolderBrowserDialog d2 = new FolderBrowserDialog();
             d2.Description = "Выбери папку instance";
             if (d2.ShowDialog() == DialogResult.OK) { pathBox.Text = d2.SelectedPath; RefreshStatus(); }
         };
-        Button find = new Button() { Text = "Найти", Top = 72, Left = 463, Width = 70 };
+        Button find = new Button() { Text = "Найти", Top = 72, Left = 573, Width = 70 };
         find.Click += delegate { RefreshList(); };
-        Label cl = new Label() { Text = "Найденные сборки (можно выбрать или указать путь вручную):", Top = 100, Left = 14, Width = 520 };
-        combo = new ComboBox() { Top = 120, Left = 14, Width = 519, DropDownStyle = ComboBoxStyle.DropDownList };
+        Label cl = new Label() { Text = "Найденные сборки (можно выбрать или указать путь вручную):", Top = 100, Left = 14, Width = 660 };
+        combo = new ComboBox() { Top = 120, Left = 14, Width = 659, DropDownStyle = ComboBoxStyle.DropDownList };
         combo.SelectedIndexChanged += delegate {
             if (combo.SelectedItem != null) { pathBox.Text = combo.SelectedItem.ToString(); RefreshStatus(); }
         };
-        statusLbl = new Label() { Top = 172, Left = 14, Width = 519, Height = 30, Text = "Статус: выбери папку.", Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold) };
+        statusLbl = new Label() { Top = 172, Left = 14, Width = 659, Height = 30, Text = "Статус: выбери папку.", Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold) };
         bakBox = new CheckBox() { Text = "Делать бэкапы оригиналов (.en.bak)", Top = 148, Left = 14, Width = 265, Checked = true };
-        goBtn = new Button() { Text = "Установить", Top = 144, Left = 288, Width = 115, Height = 30, Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold) };
+        goBtn = new Button() { Text = "Установить", Top = 144, Left = 412, Width = 120, Height = 30, Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold) };
         AcceptButton = goBtn;
         goBtn.Click += delegate { Run(); };
-        Button rbBtn = new Button() { Text = "Откатить", Top = 144, Left = 409, Width = 124, Height = 30 };
+        Button rbBtn = new Button() { Text = "Откатить", Top = 144, Left = 538, Width = 135, Height = 30 };
         rbBtn.Click += delegate {
             string inst = pathBox.Text.Trim().Trim('"');
             if (!Directory.Exists(Path.Combine(inst, "mods")))
@@ -432,8 +432,8 @@ public class SetupForm : Form
                 Log("ОШИБКА: " + e.Message);
             }
         };
-        logBox = new TextBox() { Top = 204, Left = 14, Width = 519, Height = 126, Multiline = true, ReadOnly = true, ScrollBars = ScrollBars.Vertical, Font = new System.Drawing.Font("Consolas", 8.5F), BackColor = System.Drawing.Color.FromArgb(245, 245, 245) };
-        bar = new ProgressBar() { Top = 336, Left = 14, Width = 519, Height = 20, Style = ProgressBarStyle.Marquee, Visible = false };
+        logBox = new TextBox() { Top = 204, Left = 14, Width = 659, Height = 126, Multiline = true, ReadOnly = true, ScrollBars = ScrollBars.Vertical, Font = new System.Drawing.Font("Consolas", 8.5F), BackColor = System.Drawing.Color.FromArgb(245, 245, 245) };
+        bar = new ProgressBar() { Top = 336, Left = 14, Width = 659, Height = 20, Style = ProgressBarStyle.Marquee, Visible = false };
 
         Controls.Add(pic); Controls.Add(sub); Controls.Add(t); Controls.Add(d); Controls.Add(pathBox);
         Controls.Add(browse); Controls.Add(find); Controls.Add(cl); Controls.Add(combo); Controls.Add(statusLbl); Controls.Add(bakBox);
