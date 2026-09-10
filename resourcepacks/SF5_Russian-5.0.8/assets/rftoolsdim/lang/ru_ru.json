@@ -66,7 +66,7 @@
   "entity.rftoolsdim.dimensional_blob_common": "Обычный сгусток",
   "entity.rftoolsdim.dimensional_blob_rare": "Редкий сгусток",
   "entity.rftoolsdim.dimensional_blob_legendary": "Легендарный сгусток",
-  "death.dimension.powerfailure": "%s dies in a collapsing мир!",
+  "death.dimension.powerfailure": "%s погибает в рушащемся мире!",
   "_comment": "Messages",
   "itemGroup.rftoolsdim": "RFTools Dimensions",
   "message.rftoolsdim.shiftmessage": "<Нажмите Shift>",

@@ -1,6 +1,6 @@
 {
   "item.sebastrnlib.book": "Sebastrn's Mods!",
-  "sebastrnlib.landing": "Hi $(playername)!$(br2)Connect your $(6)Cooking For Blockheads (CFB)$() кухонный мультиблок с your favorite Сеть Storage mod.$(br2)$(4)Refined Cooking$() connects $(6)CFB$() с $(1)Refined Storage$().$(br2)$(2)Применены Cooking$() connects $(6)CFB$() с $(5)Применены Energistics 2$().",
+  "sebastrnlib.landing": "Привет, $(playername)!$(br2)Подключите вашу $(6)Cooking For Blockheads (CFB)$() кухонную мультиблочную конструкцию к любимому моду сетевого хранилища.$(br2)$(4)Refined Cooking$() соединяет $(6)CFB$() с $(1)Refined Storage$().$(br2)$(2)Applied Cooking$() соединяет $(6)CFB$() с $(5)Applied Energistics 2$().",
   "category.refinedcooking.name": "Утончённая готовка",
   "category.refinedcooking.description": "A mod тот позволяет вам to используйте items из your $(1)Refined Storage$() сеть инвентаря напрямую in your $(6)Cooking for Blockheads$() кухонный мультиблок!$(br2)Two new блоков and один предмет are добавлено to Minecraft.$(br2)If вам есть downloaded the mod, вам'll see the chapters/entries на the справа. If не, вам может download it $(l:https://www.curseforge.com/minecraft/mc-mods/refined-cooking)здесь$()",
   "category.appliedcooking.name": "Прикладная готовка",

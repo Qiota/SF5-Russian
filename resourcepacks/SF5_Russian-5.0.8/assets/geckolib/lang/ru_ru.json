@@ -10,7 +10,7 @@
   "entity.geckolib.fake_glass": "Фальшивое стекло",
   "entity.geckolib.mutant_zombie": "Зомби-мутант",
   "entity.geckolib.gremlin": "Гремлин",
-  "entity.geckolib.mutant_zombie.equip": "Gave %1$s to the сущностей",
+  "entity.geckolib.mutant_zombie.equip": "Выдано %1$s сущности",
   "item.geckolib.bat_spawn_egg": "Яйцо призыва летучей мыши",
   "item.geckolib.bike_spawn_egg": "Яйцо призыва велосипеда",
   "item.geckolib.cool_kid_spawn_egg": "Яйцо призыва крутого парня",

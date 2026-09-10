@@ -1,5 +1,5 @@
 {
-  "embeddium.conflicting_mod": "Embeddium detected the наличие of mods тот are known to вызвать отрисовку проблемы/crashes. It is recommended to uninstall them. See the список ниже.",
+  "embeddium.conflicting_mod": "Embeddium обнаружил моды, которые, как известно, вызывают проблемы с отрисовкой/вылеты. Рекомендуется удалить их. Смотрите список ниже.",
   "embeddium.conflicting_mod_list": "[{2}]",
   "embeddium.search_bar_empty": "Search настройки...",
   "embeddium.options.added_by_mod_string": "Добавлено by mod: %s",

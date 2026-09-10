@@ -18,7 +18,7 @@
   "main_screen.btn.cancel": "Отмена",
   "main_screen.btn.next_sounds": "След. звуки",
   "main_screen.btn.previous_sounds": "Пред. звуки",
-  "main_screen.btn.anchors.disabled": "Якоря are отключено!",
+  "main_screen.btn.anchors.disabled": "Якоря отключены!",
   "main_screen.btn.anchors.set_message": "Установить the якорь первое",
   "main_screen.btn.anchors.set": "Установить якорь",
   "main_screen.btn.anchors.set_range": "Радиус: 1 - 32",

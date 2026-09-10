@@ -10,7 +10,7 @@
   "crafttweaker.command.conflict.description.type": " для типа %s",
   "crafttweaker.command.conflict.error": "Во время проверки конфликтов произошла ошибка: проверьте журналы",
   "crafttweaker.command.conflict.hand.empty": "В руке пусто: нельзя проверить конфликты для пустого предмета",
-  "crafttweaker.command.conflict.warnings": "не выполняйте /reload сервера и не выходите из мира meanwhile",
+  "crafttweaker.command.conflict.warnings": "не выполняйте /reload сервера и не выходите из мира тем временем",
   "crafttweaker.command.description.conflicts": "Находит и сообщает о конфликтах между различными рецептами",
   "crafttweaker.command.description.ctgui": "Показывает информацию о состоянии CTGUI",
   "crafttweaker.command.description.discord": "Даёт ссылку на Discord-сервер CraftTweaker",

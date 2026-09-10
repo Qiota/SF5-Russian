@@ -1,6 +1,6 @@
 {
-  "entity.littlecontraptions.contraption_barge": "Баржа contraption",
-  "item.littlecontraptions.contraption_barge": "Баржа contraption",
+  "entity.littlecontraptions.contraption_barge": "Баржа с механизмом",
+  "item.littlecontraptions.contraption_barge": "Баржа с механизмом",
   "block.littlecontraptions.barge_assembler": "Сборщик барж",
   "littlecontraptions.ponder.tag.tugs": "Буксиры Little Logistics",
   "littlecontraptions.ponder.tag.tugs.description": "Водные составы с поиском пути!",

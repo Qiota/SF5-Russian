@@ -285,7 +285,7 @@
   "gui.enderio.ioconfig.push": "Толкать",
   "gui.enderio.no_capacitor": "Установите конденсатор, чтобы использовать машину",
   "gui.enderio.no_power": "Недостаточно энергии для работы машины",
-  "gui.enderio.no_soulbound": "Bind a soul to the item to be able to use it",
+  "gui.enderio.no_soulbound": "Привяжите душу к предмету, чтобы использовать его",
   "gui.enderio.no_source": "Стоку нужен блок-источник под ним",
   "gui.enderio.nocap.desc": "Вставьте любой конденсатор, \n чтобы механизм заработал!",
   "gui.enderio.nocap.title": "Отсутствует конденсатор",

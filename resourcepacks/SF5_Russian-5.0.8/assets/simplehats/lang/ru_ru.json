@@ -1,8 +1,8 @@
 {
   "tooltip.simplehats.dyeable": "Можно красить",
-  "tooltip.simplehats.variant": "Переключение variants in the crafting сетка",
-  "tooltip.simplehats.special_true": "Oooh, special!",
-  "tooltip.simplehats.special_false": "Just an average, ordinary, simple шляпа",
+  "tooltip.simplehats.variant": "Переключение вариантов в сетке крафта",
+  "tooltip.simplehats.special_true": "Ооо, особенная!",
+  "tooltip.simplehats.special_false": "Просто средняя, обычная, простая шляпа",
   "item.simplehats.hatbag_common": "Обычный Шляпа Grab-Bag",
   "item.simplehats.hatbag_uncommon": "Необычный Шляпа Grab-Bag",
   "item.simplehats.hatbag_rare": "Редкий Шляпа Grab-Bag",

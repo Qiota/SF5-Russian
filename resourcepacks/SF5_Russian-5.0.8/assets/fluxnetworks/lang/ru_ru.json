@@ -16,7 +16,7 @@
   "tooltip.fluxnetworks.flux_plug": "Извлекает энергию из соседних тайлов. Добавление энергии в вашу флаксовую сеть",
   "tooltip.fluxnetworks.flux_point": "Передаёт энергию в соседние тайлы. Удаление энергии из вашей флаксовой сети",
   "tooltip.fluxnetworks.flux_storage": "Хранит энергию для вашей флаксовой сети",
-  "tooltip.fluxnetworks.flux_storage_2": "Energy Capacity: %s",
+  "tooltip.fluxnetworks.flux_storage_2": "Вместимость энергии: %s",
   "gui.fluxnetworks.tab.home": "Дом",
   "gui.fluxnetworks.tab.selection": "Выбор сети",
   "gui.fluxnetworks.tab.wireless": "Беспроводная зарядка",
