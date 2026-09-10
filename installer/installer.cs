@@ -59,6 +59,7 @@ public static class RuSetup
         res.Add(CheckGroup("Скрипты", Path.Combine(root, "scripts-patch", "scripts"), Path.Combine(instance, "scripts")));
         res.Add(CheckGroup("Задания", Path.Combine(root, "config-patch", "config"), Path.Combine(instance, "config")));
         res.Add(CheckGroup("Датапак", Path.Combine(root, "datapack-patch", "data"), Path.Combine(instance, "global_packs", "required_data", "skyfactory_5", "data")));
+        res.Add(CheckGroup("Паки", Path.Combine(root, "datapack-patch", "global"), Path.Combine(instance, "global_packs")));
         return res;
     }
 
@@ -137,6 +138,7 @@ public static class RuSetup
             CopyFile(root, instance, f.Substring(root.Length).TrimStart(Path.DirectorySeparatorChar), Path.Combine("scripts", "colors", "items", Path.GetFileName(f)), backups, log);
         CopyFile(root, instance, Path.Combine("config-patch", "config", "checklist", "tasks.txt"), Path.Combine("config", "checklist", "tasks.txt"), backups, log);
         CopyDir(Path.Combine(root, "datapack-patch", "data"), Path.Combine(instance, "global_packs", "required_data", "skyfactory_5", "data"), log);
+        CopyDir(Path.Combine(root, "datapack-patch", "global"), Path.Combine(instance, "global_packs"), log);
         EnablePack(instance, log);
         int after = BadCount(CheckAll(root, instance));
         log("Проверено после установки, осталось проблем: " + after + ".");
