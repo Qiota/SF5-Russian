@@ -52,6 +52,43 @@ public static class RuSetup
         return tmp;
     }
 
+    public static List<CompStatus> CheckAll(string root, string instance)
+    {
+        List<CompStatus> res = new List<CompStatus>();
+        res.Add(CheckGroup("Пак", Path.Combine(root, "resourcepacks", Pack), Path.Combine(instance, "resourcepacks", Pack)));
+        res.Add(CheckGroup("Скрипты", Path.Combine(root, "scripts-patch", "scripts"), Path.Combine(instance, "scripts")));
+        res.Add(CheckGroup("Задания", Path.Combine(root, "config-patch", "config"), Path.Combine(instance, "config")));
+        res.Add(CheckGroup("Датапак", Path.Combine(root, "datapack-patch", "data"), Path.Combine(instance, "global_packs", "required_data", "skyfactory_5", "data")));
+        return res;
+    }
+
+    static CompStatus CheckGroup(string name, string srcBase, string dstBase)
+    {
+        CompStatus c = new CompStatus();
+        c.name = name;
+        if (!Directory.Exists(srcBase)) return c;
+        foreach (string f in Directory.GetFiles(srcBase, "*", SearchOption.AllDirectories))
+        {
+            string rel = f.Substring(srcBase.Length).TrimStart(Path.DirectorySeparatorChar);
+            string dst = Path.Combine(dstBase, rel);
+            c.total++;
+            if (!File.Exists(dst)) { c.missing++; continue; }
+            byte[] a = File.ReadAllBytes(f);
+            byte[] b = File.ReadAllBytes(dst);
+            bool same = a.Length == b.Length;
+            if (same) for (int i = 0; i < a.Length; i++) if (a[i] != b[i]) { same = false; break; }
+            if (same) c.ok++; else c.broken++;
+        }
+        return c;
+    }
+
+    public static string PackState(string instance)
+    {
+        string opt = Path.Combine(instance, "options.txt");
+        if (!File.Exists(opt)) return "пак: включи вручную";
+        return File.ReadAllText(opt).Contains(Pack) ? "пак: включён" : "пак: выключен";
+    }
+
     public static string DetectInstance()
     {
         List<string> all = AllInstances();
@@ -87,6 +124,8 @@ public static class RuSetup
         if (!Directory.Exists(Path.Combine(instance, "mods")))
             throw new Exception("В папке нет mods: " + instance);
         log("Папка: " + instance);
+        int before = BadCount(CheckAll(root, instance));
+        if (before == 0) log("Всё уже установлено и цело.");
         CopyDir(Path.Combine(root, "resourcepacks", Pack), Path.Combine(instance, "resourcepacks", Pack), log);
         CopyFile(root, instance, Path.Combine("scripts-patch", "scripts", "tooltips.zs"), Path.Combine("scripts", "tooltips.zs"), backups, log);
         CopyFile(root, instance, Path.Combine("scripts-patch", "scripts", "globals.zs"), Path.Combine("scripts", "globals.zs"), backups, log);
@@ -99,7 +138,16 @@ public static class RuSetup
         CopyFile(root, instance, Path.Combine("config-patch", "config", "checklist", "tasks.txt"), Path.Combine("config", "checklist", "tasks.txt"), backups, log);
         CopyDir(Path.Combine(root, "datapack-patch", "data"), Path.Combine(instance, "global_packs", "required_data", "skyfactory_5", "data"), log);
         EnablePack(instance, log);
+        int after = BadCount(CheckAll(root, instance));
+        log("Проверено после установки, осталось проблем: " + after + ".");
         log("Готово! Перезапусти игру. Язык в игре: Русский.");
+    }
+
+    static int BadCount(List<CompStatus> list)
+    {
+        int n = 0;
+        foreach (CompStatus c in list) n += c.missing + c.broken;
+        return n;
     }
 
     static void CopyDir(string src, string dst, Action<string> log)
@@ -145,10 +193,26 @@ public static class RuSetup
     }
 }
 
+public class CompStatus
+{
+    public string name;
+    public int ok;
+    public int missing;
+    public int broken;
+    public int total;
+    public string Text()
+    {
+        if (total == 0) return name + ": нет данных";
+        if (missing == 0 && broken == 0) return name + ": OK (" + total + ")";
+        return name + ": чинить " + (missing + broken) + " (нет: " + missing + ", битых: " + broken + ")";
+    }
+}
+
 public class SetupForm : Form
 {
     TextBox pathBox;
     ComboBox combo;
+    Label statusLbl;
     TextBox logBox;
     ProgressBar bar;
     CheckBox bakBox;
@@ -172,25 +236,37 @@ public class SetupForm : Form
         browse.Click += delegate {
             FolderBrowserDialog d2 = new FolderBrowserDialog();
             d2.Description = "Выбери папку instance";
-            if (d2.ShowDialog() == DialogResult.OK) pathBox.Text = d2.SelectedPath;
+            if (d2.ShowDialog() == DialogResult.OK) { pathBox.Text = d2.SelectedPath; RefreshStatus(); }
         };
         Button find = new Button() { Text = "Найти", Top = 72, Left = 463, Width = 70 };
         find.Click += delegate { RefreshList(); };
         Label cl = new Label() { Text = "Найденные сборки (можно выбрать или указать путь вручную):", Top = 100, Left = 14, Width = 520 };
         combo = new ComboBox() { Top = 120, Left = 14, Width = 519, DropDownStyle = ComboBoxStyle.DropDownList };
         combo.SelectedIndexChanged += delegate {
-            if (combo.SelectedItem != null) pathBox.Text = combo.SelectedItem.ToString();
+            if (combo.SelectedItem != null) { pathBox.Text = combo.SelectedItem.ToString(); RefreshStatus(); }
         };
+        statusLbl = new Label() { Top = 174, Left = 14, Width = 519, Height = 16, Text = "Статус: выбери папку." };
         bakBox = new CheckBox() { Text = "Делать бэкапы оригиналов (.en.bak)", Top = 148, Left = 14, Width = 320, Checked = true };
         goBtn = new Button() { Text = "Установить", Top = 144, Left = 382, Width = 151, Height = 30 };
         goBtn.Click += delegate { Run(); };
-        logBox = new TextBox() { Top = 180, Left = 14, Width = 519, Height = 150, Multiline = true, ReadOnly = true, ScrollBars = ScrollBars.Vertical };
+        logBox = new TextBox() { Top = 192, Left = 14, Width = 519, Height = 138, Multiline = true, ReadOnly = true, ScrollBars = ScrollBars.Vertical };
         bar = new ProgressBar() { Top = 336, Left = 14, Width = 519, Height = 20, Style = ProgressBarStyle.Marquee, Visible = false };
 
         Controls.Add(t); Controls.Add(d); Controls.Add(pathBox);
-        Controls.Add(browse); Controls.Add(find); Controls.Add(cl); Controls.Add(combo); Controls.Add(bakBox);
+        Controls.Add(browse); Controls.Add(find); Controls.Add(cl); Controls.Add(combo); Controls.Add(statusLbl); Controls.Add(bakBox);
         Controls.Add(goBtn); Controls.Add(logBox); Controls.Add(bar);
         RefreshList();
+        RefreshStatus();
+    }
+
+    void RefreshStatus()
+    {
+        string inst = pathBox.Text.Trim().Trim('"');
+        if (!Directory.Exists(Path.Combine(inst, "mods"))) { statusLbl.Text = "Статус: нет папки mods."; return; }
+        List<CompStatus> list = RuSetup.CheckAll(root, inst);
+        string s = "";
+        foreach (CompStatus c in list) s += c.Text() + " | ";
+        statusLbl.Text = "Статус: " + s + RuSetup.PackState(inst) + ".";
     }
 
     void RefreshList()
@@ -217,6 +293,7 @@ public class SetupForm : Form
         try
         {
             RuSetup.Install(root, inst, bakBox.Checked, Log);
+            RefreshStatus();
             MessageBox.Show("Готово! Перезапусти игру.\nЯзык в игре: Русский.", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         catch (Exception e)
