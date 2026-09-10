@@ -9,6 +9,7 @@ public static class RuSetup
 {
     public const string Pack = "SF5_Russian-5.0.8";
     public const string Ver = "5.0.8";
+    public static Action<int> Prog;
 
     [STAThread]
     public static int Main(string[] args)
@@ -18,7 +19,10 @@ public static class RuSetup
         {
             try
             {
-                Install(root, args[0], true, Console.WriteLine);
+                if (args.Length > 1 && args[1].ToLowerInvariant() == "rollback")
+                    Rollback(args[0], Console.WriteLine);
+                else
+                    Install(GetDataRoot(), args[0], true, Console.WriteLine);
                 return 0;
             }
             catch (Exception e)
@@ -155,8 +159,12 @@ public static class RuSetup
         int n = 0;
         foreach (string f in Directory.GetFiles(src, "*", SearchOption.AllDirectories))
         {
-            File.Copy(f, f.Replace(src, dst), true);
+            string t = f.Replace(src, dst);
+            if (File.Exists(t) && !File.Exists(t + ".en.bak"))
+                File.Copy(t, t + ".en.bak");
+            File.Copy(f, t, true);
             n++;
+            if (Prog != null) Prog(1);
         }
         log("Скопировано файлов: " + n);
     }
@@ -170,6 +178,7 @@ public static class RuSetup
         if (backups && File.Exists(dst) && !File.Exists(dst + ".en.bak"))
             File.Copy(dst, dst + ".en.bak");
         File.Copy(src, dst, true);
+        if (Prog != null) Prog(1);
     }
 
     static void EnablePack(string instance, Action<string> log)
@@ -186,6 +195,93 @@ public static class RuSetup
         t = Regex.Replace(t, "(resourcePacks:\\[[^\\]]*)(\\])", "$1,\"file/" + Pack + "\"$2");
         File.WriteAllText(opt, t);
         log("Пак включён.");
+    }
+
+    public static void Rollback(string instance, Action<string> log)
+    {
+        int restored = 0;
+        int removed = 0;
+        foreach (string bak in Directory.GetFiles(instance, "*.en.bak", SearchOption.AllDirectories))
+        {
+            string orig = bak.Substring(0, bak.Length - 7);
+            File.Copy(bak, orig, true);
+            File.Delete(bak);
+            restored++;
+        }
+        string root = GetDataRoot();
+        foreach (string[] pair in new string[][] {
+            new string[] { Path.Combine(root, "scripts-patch", "scripts"), Path.Combine(instance, "scripts") },
+            new string[] { Path.Combine(root, "config-patch", "config"), Path.Combine(instance, "config") },
+            new string[] { Path.Combine(root, "datapack-patch", "data"), Path.Combine(instance, "global_packs", "required_data", "skyfactory_5", "data") },
+            new string[] { Path.Combine(root, "datapack-patch", "global"), Path.Combine(instance, "global_packs") } })
+        {
+            if (!Directory.Exists(pair[0])) continue;
+            foreach (string f in Directory.GetFiles(pair[0], "*", SearchOption.AllDirectories))
+            {
+                string dst = Path.Combine(pair[1], f.Substring(pair[0].Length).TrimStart(Path.DirectorySeparatorChar));
+                if (File.Exists(dst) && !File.Exists(dst + ".en.bak") && FilesEqual(f, dst))
+                {
+                    File.Delete(dst);
+                    removed++;
+                }
+            }
+        }
+        string packDir = Path.Combine(instance, "resourcepacks", Pack);
+        if (Directory.Exists(packDir)) { Directory.Delete(packDir, true); log("Пак удалён."); }
+        string opt = Path.Combine(instance, "options.txt");
+        if (File.Exists(opt))
+        {
+            string t = File.ReadAllText(opt);
+            string nt = t.Replace(",\"file/" + Pack + "\"", "").Replace("\"file/" + Pack + "\",", "").Replace("\"file/" + Pack + "\"", "");
+            if (nt != t) { File.WriteAllText(opt, nt); log("Пак выключен."); }
+        }
+        log("Восстановлено: " + restored + ", удалено наших: " + removed + ".");
+    }
+
+    static bool FilesEqual(string a, string b)
+    {
+        byte[] x = File.ReadAllBytes(a);
+        byte[] y = File.ReadAllBytes(b);
+        if (x.Length != y.Length) return false;
+        for (int i = 0; i < x.Length; i++) if (x[i] != y[i]) return false;
+        return true;
+    }
+
+    public static bool IsSF5(string instance)
+    {
+        if (Directory.GetFiles(Path.Combine(instance, "mods"), "SkyFactoryTweaks-*.jar").Length > 0) return true;
+        if (Directory.Exists(Path.Combine(instance, "global_packs", "required_data", "skyfactory_5"))) return true;
+        return false;
+    }
+
+    static string LastPathFile()
+    {
+        return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "SF5Russian", "last.txt");
+    }
+
+    public static void SaveLastPath(string p)
+    {
+        try
+        {
+            Directory.CreateDirectory(Path.GetDirectoryName(LastPathFile()));
+            File.WriteAllText(LastPathFile(), p);
+        }
+        catch { }
+    }
+
+    public static string LoadLastPath()
+    {
+        try
+        {
+            string f = LastPathFile();
+            if (File.Exists(f))
+            {
+                string p = File.ReadAllText(f).Trim();
+                if (Directory.Exists(Path.Combine(p, "mods"))) return p;
+            }
+        }
+        catch { }
+        return "";
     }
 }
 
@@ -243,16 +339,38 @@ public class SetupForm : Form
         };
         statusLbl = new Label() { Top = 174, Left = 14, Width = 519, Height = 16, Text = "Статус: выбери папку." };
         bakBox = new CheckBox() { Text = "Делать бэкапы оригиналов (.en.bak)", Top = 148, Left = 14, Width = 320, Checked = true };
-        goBtn = new Button() { Text = "Установить", Top = 144, Left = 382, Width = 151, Height = 30 };
+        goBtn = new Button() { Text = "Установить", Top = 144, Left = 300, Width = 100, Height = 30 };
         goBtn.Click += delegate { Run(); };
+        Button rbBtn = new Button() { Text = "Откатить", Top = 144, Left = 406, Width = 127, Height = 30 };
+        rbBtn.Click += delegate {
+            string inst = pathBox.Text.Trim().Trim('"');
+            if (!Directory.Exists(Path.Combine(inst, "mods")))
+            {
+                MessageBox.Show("В папке нет mods. Проверь путь.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (MessageBox.Show("Вернуть оригинальные файлы и убрать пак?", "Откат", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes) return;
+            try
+            {
+                RuSetup.Rollback(inst, Log);
+                RefreshStatus();
+                MessageBox.Show("Откат выполнен.", "Готово", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception e)
+            {
+                Log("ОШИБКА: " + e.Message);
+            }
+        };
         logBox = new TextBox() { Top = 192, Left = 14, Width = 519, Height = 138, Multiline = true, ReadOnly = true, ScrollBars = ScrollBars.Vertical };
         bar = new ProgressBar() { Top = 336, Left = 14, Width = 519, Height = 20, Style = ProgressBarStyle.Marquee, Visible = false };
 
         Controls.Add(t); Controls.Add(d); Controls.Add(pathBox);
         Controls.Add(browse); Controls.Add(find); Controls.Add(cl); Controls.Add(combo); Controls.Add(statusLbl); Controls.Add(bakBox);
-        Controls.Add(goBtn); Controls.Add(logBox); Controls.Add(bar);
+        Controls.Add(goBtn); Controls.Add(rbBtn); Controls.Add(logBox); Controls.Add(bar);
         RefreshList();
-        RefreshStatus();
+        string last = RuSetup.LoadLastPath();
+        if (last != "") { pathBox.Text = last; RefreshStatus(); }
+        else RefreshStatus();
     }
 
     void RefreshStatus()
@@ -284,11 +402,24 @@ public class SetupForm : Form
             MessageBox.Show("В папке нет mods. Проверь путь.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             return;
         }
+        if (!RuSetup.IsSF5(inst))
+        {
+            if (MessageBox.Show("Это не похоже на SkyFactory 5. Продолжить?", "Проверка", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes) return;
+        }
         goBtn.Enabled = false;
+        bar.Style = ProgressBarStyle.Continuous;
+        bar.Maximum = CountFiles();
+        bar.Value = 0;
         bar.Visible = true;
+        int tick = 0;
+        RuSetup.Prog = delegate(int n) {
+            bar.Value = System.Math.Min(bar.Maximum, bar.Value + n);
+            if (++tick % 25 == 0) Application.DoEvents();
+        };
         try
         {
             RuSetup.Install(root, inst, bakBox.Checked, Log);
+            RuSetup.SaveLastPath(inst);
             RefreshStatus();
             MessageBox.Show("Готово! Перезапусти игру.\nЯзык в игре: Русский.", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -297,7 +428,22 @@ public class SetupForm : Form
             Log("ОШИБКА: " + e.Message);
             MessageBox.Show(e.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+        RuSetup.Prog = null;
         bar.Visible = false;
         goBtn.Enabled = true;
+    }
+
+    int CountFiles()
+    {
+        int n = 0;
+        foreach (string d in new string[] {
+            Path.Combine(root, "resourcepacks", RuSetup.Pack),
+            Path.Combine(root, "scripts-patch"),
+            Path.Combine(root, "config-patch"),
+            Path.Combine(root, "datapack-patch") })
+        {
+            if (Directory.Exists(d)) n += Directory.GetFiles(d, "*", SearchOption.AllDirectories).Length;
+        }
+        return System.Math.Max(n, 1);
     }
 }
