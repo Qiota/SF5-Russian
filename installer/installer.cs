@@ -342,8 +342,19 @@ public class SetupForm : Form
         FormBorderStyle = FormBorderStyle.FixedDialog;
         MaximizeBox = false;
         StartPosition = FormStartPosition.CenterScreen;
+        BackColor = System.Drawing.Color.White;
+        try { Icon = System.Drawing.Icon.ExtractAssociatedIcon(Application.ExecutablePath); }
+        catch { }
 
-        Label t = new Label() { Text = "Русификатор SkyFactory 5 (v" + RuSetup.Ver + ")", Top = 12, Left = 14, Width = 520, Font = new System.Drawing.Font("Segoe UI", 12F) };
+        PictureBox pic = new PictureBox() { Top = 8, Left = 14, Width = 52, Height = 52, SizeMode = PictureBoxSizeMode.Zoom };
+        try
+        {
+            string ip = Path.Combine(root, "resourcepacks", RuSetup.Pack, "pack.png");
+            if (File.Exists(ip)) pic.Image = System.Drawing.Image.FromFile(ip);
+        }
+        catch { }
+        Label t = new Label() { Text = "Русификатор SkyFactory 5 (v" + RuSetup.Ver + ")", Top = 10, Left = 74, Width = 460, Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold), ForeColor = System.Drawing.Color.FromArgb(30, 60, 120) };
+        Label sub = new Label() { Text = "Полный перевод модпака by Qiota", Top = 36, Left = 74, Width = 460, ForeColor = System.Drawing.Color.Gray };
         Label d = new Label() { Text = "Папка instance (где лежат mods, resourcepacks, config):", Top = 52, Left = 14, Width = 520 };
         pathBox = new TextBox() { Top = 74, Left = 14, Width = 360 };
         Button browse = new Button() { Text = "Обзор...", Top = 72, Left = 382, Width = 75 };
@@ -359,9 +370,10 @@ public class SetupForm : Form
         combo.SelectedIndexChanged += delegate {
             if (combo.SelectedItem != null) { pathBox.Text = combo.SelectedItem.ToString(); RefreshStatus(); }
         };
-        statusLbl = new Label() { Top = 174, Left = 14, Width = 519, Height = 16, Text = "Статус: выбери папку." };
+        statusLbl = new Label() { Top = 174, Left = 14, Width = 519, Height = 16, Text = "Статус: выбери папку.", Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold) };
         bakBox = new CheckBox() { Text = "Делать бэкапы оригиналов (.en.bak)", Top = 148, Left = 14, Width = 320, Checked = true };
-        goBtn = new Button() { Text = "Установить", Top = 144, Left = 300, Width = 100, Height = 30 };
+        goBtn = new Button() { Text = "Установить", Top = 144, Left = 300, Width = 100, Height = 30, Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold) };
+        AcceptButton = goBtn;
         goBtn.Click += delegate { Run(); };
         Button rbBtn = new Button() { Text = "Откатить", Top = 144, Left = 406, Width = 127, Height = 30 };
         rbBtn.Click += delegate {
@@ -383,10 +395,10 @@ public class SetupForm : Form
                 Log("ОШИБКА: " + e.Message);
             }
         };
-        logBox = new TextBox() { Top = 192, Left = 14, Width = 519, Height = 138, Multiline = true, ReadOnly = true, ScrollBars = ScrollBars.Vertical };
+        logBox = new TextBox() { Top = 192, Left = 14, Width = 519, Height = 138, Multiline = true, ReadOnly = true, ScrollBars = ScrollBars.Vertical, Font = new System.Drawing.Font("Consolas", 8.5F), BackColor = System.Drawing.Color.FromArgb(245, 245, 245) };
         bar = new ProgressBar() { Top = 336, Left = 14, Width = 519, Height = 20, Style = ProgressBarStyle.Marquee, Visible = false };
 
-        Controls.Add(t); Controls.Add(d); Controls.Add(pathBox);
+        Controls.Add(pic); Controls.Add(sub); Controls.Add(t); Controls.Add(d); Controls.Add(pathBox);
         Controls.Add(browse); Controls.Add(find); Controls.Add(cl); Controls.Add(combo); Controls.Add(statusLbl); Controls.Add(bakBox);
         Controls.Add(goBtn); Controls.Add(rbBtn); Controls.Add(logBox); Controls.Add(bar);
         RefreshList();
@@ -398,11 +410,22 @@ public class SetupForm : Form
     void RefreshStatus()
     {
         string inst = pathBox.Text.Trim().Trim('"');
-        if (!Directory.Exists(Path.Combine(inst, "mods"))) { statusLbl.Text = "Статус: нет папки mods."; return; }
+        if (!Directory.Exists(Path.Combine(inst, "mods")))
+        {
+            statusLbl.Text = "Статус: нет папки mods.";
+            statusLbl.ForeColor = System.Drawing.Color.Gray;
+            return;
+        }
         List<CompStatus> list = RuSetup.CheckAll(root, inst);
         string s = "";
-        foreach (CompStatus c in list) s += c.Text() + " | ";
+        int bad = 0;
+        foreach (CompStatus c in list)
+        {
+            s += c.Text() + " | ";
+            bad += c.missing + c.broken;
+        }
         statusLbl.Text = "Статус: " + s + RuSetup.PackState(inst) + ".";
+        statusLbl.ForeColor = bad == 0 ? System.Drawing.Color.FromArgb(0, 130, 0) : System.Drawing.Color.FromArgb(180, 60, 0);
     }
 
     void RefreshList()
