@@ -74,13 +74,50 @@ public static class RuSetup
             string dst = Path.Combine(dstBase, rel);
             c.total++;
             if (!File.Exists(dst)) { c.missing++; continue; }
-            byte[] a = File.ReadAllBytes(f);
-            byte[] b = File.ReadAllBytes(dst);
-            bool same = a.Length == b.Length;
-            if (same) for (int i = 0; i < a.Length; i++) if (a[i] != b[i]) { same = false; break; }
-            if (same) c.ok++; else c.broken++;
+            if (SameFile(f, dst)) c.ok++; else c.broken++;
         }
         return c;
+    }
+
+    static bool SameFile(string a, string b)
+    {
+        byte[] x = File.ReadAllBytes(a);
+        byte[] y = File.ReadAllBytes(b);
+        if (x.Length == y.Length)
+        {
+            bool same = true;
+            for (int i = 0; i < x.Length; i++) if (x[i] != y[i]) { same = false; break; }
+            if (same) return true;
+        }
+        if (!a.EndsWith(".json", StringComparison.OrdinalIgnoreCase)) return false;
+        try
+        {
+            var ser = new System.Web.Script.Serialization.JavaScriptSerializer();
+            ser.MaxJsonLength = 100 * 1024 * 1024;
+            var dx = ser.Deserialize<System.Collections.Generic.Dictionary<string, object>>(NormText(File.ReadAllText(a)));
+            var dy = ser.Deserialize<System.Collections.Generic.Dictionary<string, object>>(NormText(File.ReadAllText(b)));
+            if (dx.Count != dy.Count) return false;
+            foreach (var kv in dx)
+            {
+                if (!dy.ContainsKey(kv.Key)) return false;
+                if (NormText(Str(kv.Value)) != NormText(Str(dy[kv.Key]))) return false;
+            }
+            return true;
+        }
+        catch { return false; }
+    }
+
+    static string Str(object o)
+    {
+        if (o == null) return "";
+        if (o is string) return (string)o;
+        return new System.Web.Script.Serialization.JavaScriptSerializer().Serialize(o);
+    }
+
+    static string NormText(string t)
+    {
+        if (t == null) return "";
+        return t.Replace("\r\n", "\n").Replace('\r', '\n').Trim();
     }
 
     public static string PackState(string instance)
@@ -370,12 +407,12 @@ public class SetupForm : Form
         combo.SelectedIndexChanged += delegate {
             if (combo.SelectedItem != null) { pathBox.Text = combo.SelectedItem.ToString(); RefreshStatus(); }
         };
-        statusLbl = new Label() { Top = 174, Left = 14, Width = 519, Height = 16, Text = "Статус: выбери папку.", Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold) };
-        bakBox = new CheckBox() { Text = "Делать бэкапы оригиналов (.en.bak)", Top = 148, Left = 14, Width = 320, Checked = true };
-        goBtn = new Button() { Text = "Установить", Top = 144, Left = 300, Width = 100, Height = 30, Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold) };
+        statusLbl = new Label() { Top = 172, Left = 14, Width = 519, Height = 30, Text = "Статус: выбери папку.", Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold) };
+        bakBox = new CheckBox() { Text = "Делать бэкапы оригиналов (.en.bak)", Top = 148, Left = 14, Width = 265, Checked = true };
+        goBtn = new Button() { Text = "Установить", Top = 144, Left = 288, Width = 115, Height = 30, Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold) };
         AcceptButton = goBtn;
         goBtn.Click += delegate { Run(); };
-        Button rbBtn = new Button() { Text = "Откатить", Top = 144, Left = 406, Width = 127, Height = 30 };
+        Button rbBtn = new Button() { Text = "Откатить", Top = 144, Left = 409, Width = 124, Height = 30 };
         rbBtn.Click += delegate {
             string inst = pathBox.Text.Trim().Trim('"');
             if (!Directory.Exists(Path.Combine(inst, "mods")))
@@ -395,7 +432,7 @@ public class SetupForm : Form
                 Log("ОШИБКА: " + e.Message);
             }
         };
-        logBox = new TextBox() { Top = 192, Left = 14, Width = 519, Height = 138, Multiline = true, ReadOnly = true, ScrollBars = ScrollBars.Vertical, Font = new System.Drawing.Font("Consolas", 8.5F), BackColor = System.Drawing.Color.FromArgb(245, 245, 245) };
+        logBox = new TextBox() { Top = 204, Left = 14, Width = 519, Height = 126, Multiline = true, ReadOnly = true, ScrollBars = ScrollBars.Vertical, Font = new System.Drawing.Font("Consolas", 8.5F), BackColor = System.Drawing.Color.FromArgb(245, 245, 245) };
         bar = new ProgressBar() { Top = 336, Left = 14, Width = 519, Height = 20, Style = ProgressBarStyle.Marquee, Visible = false };
 
         Controls.Add(pic); Controls.Add(sub); Controls.Add(t); Controls.Add(d); Controls.Add(pathBox);
@@ -424,7 +461,7 @@ public class SetupForm : Form
             s += c.Text() + " | ";
             bad += c.missing + c.broken;
         }
-        statusLbl.Text = "Статус: " + s + RuSetup.PackState(inst) + ".";
+        statusLbl.Text = "Статус: " + s + "\n" + RuSetup.PackState(inst) + ".";
         statusLbl.ForeColor = bad == 0 ? System.Drawing.Color.FromArgb(0, 130, 0) : System.Drawing.Color.FromArgb(180, 60, 0);
     }
 

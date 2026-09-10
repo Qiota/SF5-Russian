@@ -1,7 +1,7 @@
 {
   "block.framedblocks.framed_activator_rail_slope": "Каркасный склон активаторных рельс",
-  "block.framedblocks.framed_adj_double_copycat_panel": "Каркасный регулируемая двойная Копикэт панель",
-  "block.framedblocks.framed_adj_double_copycat_slab": "Каркасная регулируемая двойная Копикэт плита",
+  "block.framedblocks.framed_adj_double_copycat_panel": "Каркасный регулируемая двойная Copycat панель",
+  "block.framedblocks.framed_adj_double_copycat_slab": "Каркасная регулируемая двойная Copycat плита",
   "block.framedblocks.framed_adj_double_panel": "Каркасный регулируемая двойная панель",
   "block.framedblocks.framed_adj_double_slab": "Каркасная регулируемая двойная плита",
   "block.framedblocks.framed_bars": "Каркасная прутья",
@@ -245,7 +245,7 @@
   "desc.framedblocks.blueprint_true": "истина",
   "framedblocks.key.categories.framedblocks": "FramedBlocks",
   "framedblocks.key.update_cull": "Обновить отсечение кэш",
-  "item.framedblocks.framed_blueprint": "Каркасный чертёж",
+  "item.framedblocks.framed_blueprint": "Каркасный blueprint",
   "item.framedblocks.framed_hammer": "Каркасный молот",
   "item.framedblocks.framed_key": "Каркасный ключ",
   "item.framedblocks.framed_reinforcement": "Каркасный укрепление",

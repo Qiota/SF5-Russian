@@ -1,0 +1,10 @@
+*.json text eol=lf
+*.zs text eol=lf
+*.txt text eol=lf
+*.mcmeta text eol=lf
+*.md text eol=lf
+*.bat text eol=crlf
+*.ico binary
+*.png binary
+*.exe binary
+*.zip binary

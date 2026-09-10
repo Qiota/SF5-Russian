@@ -1881,7 +1881,7 @@
   "occultism.configuration.redChalkGlyphColor": "Цвет красного мелового глифа",
   "occultism.configuration.ritualDurationMultiplier": "Коэффициент для регулирования продолжительности всех ритуалов.",
   "occultism.configuration.rituals": "Настройки ритуалов",
-  "occultism.configuration.rollsPerOperation": "Бросков за операцию",
+  "occultism.configuration.rollsPerOperation": "Rolls Per Operation",
   "occultism.configuration.showItemTagsInTooltip": "Показывать теги предмета в подсказках",
   "occultism.configuration.spirit_job": "Настройки должности духов",
   "occultism.configuration.stabilizerTier1AdditionalMaxItemTypes": "Макс. доп. типов предметов в стабилизаторе 1-го уровня",

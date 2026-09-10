@@ -177,7 +177,7 @@
   "gui.draconicevolution.flow_gate.redstone_low.info": "Поток будет пропускаться при получении сигнала редстоуна 0.",
   "gui.draconicevolution.fusion_craft.craft": "Создать",
   "gui.draconicevolution.fusion_craft.energy_cost": "Затраты энергии",
-  "gui.draconicevolution.fusion_craft.ne_tier_injectors": "Не хватает инжекторов тира %s.",
+  "gui.draconicevolution.fusion_craft.ne_tier_injectors": "Уровень инжекторов слишком мал.",
   "gui.draconicevolution.fusion_craft.tier.chaotic": "Уровень: Хаоса",
   "gui.draconicevolution.fusion_craft.tier.draconic": "Уровень: Дракона",
   "gui.draconicevolution.fusion_craft.tier.draconium": "Уровень: Базовый",

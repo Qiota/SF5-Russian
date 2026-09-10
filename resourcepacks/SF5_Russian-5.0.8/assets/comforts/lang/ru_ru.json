@@ -21,7 +21,7 @@
   "gui.comforts.config.sleepingBagBreakChance.name": "Шанс поломки спального мешка",
   "gui.comforts.config.sleepingBagBreakChance.description": "Шанс в процентах, что спальный мешок сломается при использовании.",
   "gui.comforts.config.sleepingBagBreakChanceLuckMultiplier.name": "Множитель удачи для поломки",
-  "gui.comforts.config.sleepingBagBreakChanceLuckMultiplier.description": "Значение, которое умножается на удачу игрока и прибавляется к sleepingBagBreakChance.",
+  "gui.comforts.config.sleepingBagBreakChanceLuckMultiplier.description": "Значение, которое умножается на удачу игрока и прибавляется к шансу поломки спального мешка.",
   "gui.comforts.config.sleepingBagEffects.name": "Эффекты спального мешка",
   "gui.comforts.config.sleepingBagEffects.description": "Эффекты, накладываемые на игроков после использования спального мешка.\nФормат: эффект;длительность(сек);уровень",
   "gui.comforts.config.hammocksStopPhantoms.name": "Гамаки останавливают фантомов",
