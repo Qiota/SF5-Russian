@@ -14,6 +14,8 @@ public static class RuSetup
     [STAThread]
     public static int Main(string[] args)
     {
+        try { System.Console.OutputEncoding = System.Text.Encoding.UTF8; }
+        catch { }
         string root = GetDataRoot();
         if (args.Length > 0 && Directory.Exists(Path.Combine(args[0], "mods")))
         {
@@ -190,11 +192,18 @@ public static class RuSetup
             return;
         }
         string t = File.ReadAllText(opt);
-        log("options имеет resourcePacks: " + t.Contains("resourcePacks:").ToString());
-        if (t.Contains(Pack)) { log("Пак уже включён."); return; }
-        t = Regex.Replace(t, "(resourcePacks:\\[[^\\]]*)(\\])", "$1,\"file/" + Pack + "\"$2");
+        if (t.Contains(Pack)) log("Пак уже включён.");
+        else
+        {
+            t = Regex.Replace(t, "(resourcePacks:\\[[^\\]]*)(\\])", "$1,\"file/" + Pack + "\"$2");
+            log("Пак включён.");
+        }
+        if (Regex.IsMatch(t, "(?m)^lang:"))
+            t = Regex.Replace(t, "(?m)^lang:.*$", "lang:ru_ru");
+        else
+            t += Environment.NewLine + "lang:ru_ru" + Environment.NewLine;
         File.WriteAllText(opt, t);
-        log("Пак включён.");
+        log("Язык игры: русский.");
     }
 
     public static void Rollback(string instance, Action<string> log)
@@ -251,6 +260,19 @@ public static class RuSetup
     {
         if (Directory.GetFiles(Path.Combine(instance, "mods"), "SkyFactoryTweaks-*.jar").Length > 0) return true;
         if (Directory.Exists(Path.Combine(instance, "global_packs", "required_data", "skyfactory_5"))) return true;
+        return false;
+    }
+
+    public static bool IsCompatibleVersion(string instance)
+    {
+        string name = Path.GetFileName(instance.TrimEnd(Path.DirectorySeparatorChar));
+        if (name.Contains("5.0.8")) return true;
+        try
+        {
+            string ij = Path.Combine(instance, "instance.json");
+            if (File.Exists(ij) && File.ReadAllText(ij).Contains("5.0.8")) return true;
+        }
+        catch { }
         return false;
     }
 
@@ -405,6 +427,10 @@ public class SetupForm : Form
         if (!RuSetup.IsSF5(inst))
         {
             if (MessageBox.Show("Это не похоже на SkyFactory 5. Продолжить?", "Проверка", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes) return;
+        }
+        if (!RuSetup.IsCompatibleVersion(inst))
+        {
+            if (MessageBox.Show("Похоже, версия сборки не 5.0.8 (перевод сделан под неё). Продолжить?", "Версия", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes) return;
         }
         goBtn.Enabled = false;
         bar.Style = ProgressBarStyle.Continuous;
