@@ -37,18 +37,12 @@ public static class RuSetup
         string exeDir = AppDomain.CurrentDomain.BaseDirectory;
         if (Directory.Exists(Path.Combine(exeDir, "resourcepacks"))) return exeDir;
         string tmp = Path.Combine(Path.GetTempPath(), "SF5RU_" + Ver);
-        bool ok = false;
-        try { ok = File.Exists(Path.Combine(tmp, "version.txt")) && File.ReadAllText(Path.Combine(tmp, "version.txt")).Trim() == Ver; }
-        catch { }
-        if (!ok)
-        {
-            if (Directory.Exists(tmp)) Directory.Delete(tmp, true);
-            Directory.CreateDirectory(tmp);
-            var asm = System.Reflection.Assembly.GetExecutingAssembly();
-            using (Stream s = asm.GetManifestResourceStream("Payload.Data"))
-            using (ZipArchive z = new ZipArchive(s))
-                z.ExtractToDirectory(tmp);
-        }
+        if (Directory.Exists(tmp)) Directory.Delete(tmp, true);
+        Directory.CreateDirectory(tmp);
+        var asm = System.Reflection.Assembly.GetExecutingAssembly();
+        using (Stream s = asm.GetManifestResourceStream("Payload.Data"))
+        using (ZipArchive z = new ZipArchive(s))
+            z.ExtractToDirectory(tmp);
         return tmp;
     }
 
