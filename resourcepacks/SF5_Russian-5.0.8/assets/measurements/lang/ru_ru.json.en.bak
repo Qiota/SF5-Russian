@@ -1,9 +1,0 @@
-{
-  "item.measurements.tape_measure": "Рулетка",
-  "text.autoconfig.measurements.option.client": "Клиент",
-  "text.autoconfig.measurements.option.client.lineColor": "Цвет линии",
-  "text.autoconfig.measurements.option.client.textColor": "Цвет текста",
-  "text.autoconfig.measurements.option.client.textSize": "Размер текста",
-  "text.autoconfig.measurements.option.client.lineWidth": "Толщина линии",
-  "text.autoconfig.measurements.option.client.lineWidthMax": "Макс. толщина линии"
-}

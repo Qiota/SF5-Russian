@@ -1,7 +1,0 @@
-{
-  "name": "Основы",
-  "description": "Базовая информация о RFTools, включая генерацию мира.",
-  "parent": "rftoolsbase:category_rftoolsbase",
-  "icon": "rftoolsbase:dimensionalshard_overworld",
-  "sortnum": 10
-}

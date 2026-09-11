@@ -1,6 +1,0 @@
-{
-  "commands.bookshelf.loot_tables": "Найдено %d отсутствующих лут-таблиц для %s.",
-  "commands.bookshelf.loot_tables.wildcard": "Найдено %d отсутствующих лут-таблиц для всех модов.",
-  "argument.bookshelf.unknown_value": "Значение «%s» неизвестно.",
-  "text.bookshelf.ticks": "Тиков: %s"
-}

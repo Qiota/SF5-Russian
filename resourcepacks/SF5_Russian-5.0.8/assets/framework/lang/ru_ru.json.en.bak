@@ -1,3 +1,0 @@
-{
-  "framework.gui.process_config_fail": "Не удалось обработать конфигурацию с сервера: %s"
-}

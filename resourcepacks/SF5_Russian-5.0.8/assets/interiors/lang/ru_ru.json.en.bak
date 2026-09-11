@@ -1,7 +1,0 @@
-{
-  "block.interiors.chair.tooltip.behaviour3": "Переключает размер спинки _стула_.",
-  "block.interiors.chair.tooltip.condition3": "Крадучись ПКМ гаечным ключом",
-  "block.interiors.wall_mounted_table": "Настенный стол",
-  "entity.interiors.big_seat": "Большое сиденье",
-  "itemGroup.interiors": "Create: Интерьеры"
-}

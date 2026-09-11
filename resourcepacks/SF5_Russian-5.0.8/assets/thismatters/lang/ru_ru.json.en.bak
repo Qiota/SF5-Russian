@@ -1,9 +1,0 @@
-{
-  "block.thismatters.organic_matter_compressor": "Компрессор органики",
-  "itemGroup.thismatters": "This Matters",
-  "thismatters.container.organic_matter_compressor": "Компрессор органики",
-  "thismatters.gui.jei.category.organic_matter_compressing": "Компрессор органики",
-  "thismatters.gui.jei.compressing.matter": "<Материя>",
-  "thismatters.gui.jei.compressing.matter_amount": "Даёт %s материи",
-  "thismatters.organic_matter_compressor.not_low_enough": "Слишком низкое давление, попробуйте разместить блок глубже"
-}

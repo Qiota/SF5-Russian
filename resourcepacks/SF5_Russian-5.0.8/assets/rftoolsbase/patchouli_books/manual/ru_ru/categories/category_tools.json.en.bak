@@ -1,7 +1,0 @@
-{
-  "name": "Инструменты",
-  "description": "Различные инструменты, которые облегчают настройку и управление техно-машинами",
-  "parent": "rftoolsbase:category_rftoolsbase",
-  "icon": "rftoolsbase:smartwrench",
-  "sortnum": 20
-}
