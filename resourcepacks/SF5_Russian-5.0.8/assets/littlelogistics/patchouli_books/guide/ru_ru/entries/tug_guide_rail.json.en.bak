@@ -1,0 +1,12 @@
+{
+  "name": "Направляющий рельс",
+  "icon": "littlelogistics:guide_rail_tug",
+  "category": "littlelogistics:blocks",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:guide_rail_tug",
+      "text": "Кладётся под блок воды, работает как энергорельс. Заставляет буксир идти заданным маршрутом. На баржи не действует. Shift+ПКМ поворачивает."
+    }
+  ]
+}

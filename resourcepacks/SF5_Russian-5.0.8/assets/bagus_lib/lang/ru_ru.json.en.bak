@@ -1,0 +1,7 @@
+{
+  "baguslib.config.shakeCameraForVanilla": "Включить тряску камеры для ваниллы",
+  "command.bagus_lib.remove_all_dialog": "Все диалоги успешно удалены",
+  "command.bagus_lib.item_dialog": "Предметный диалог успешно добавлен",
+  "command.bagus_lib.dialog": "Диалог успешно добавлен",
+  "command.bagus_lib.image_dialog": "Диалог с изображением успешно добавлен"
+}

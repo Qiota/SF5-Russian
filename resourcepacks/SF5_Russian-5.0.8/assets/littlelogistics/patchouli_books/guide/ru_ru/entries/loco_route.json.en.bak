@@ -1,0 +1,16 @@
+{
+  "name": "Маршрут локомотива",
+  "icon": "littlelogistics:locomotive_route",
+  "category": "littlelogistics:items",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:locomotive_route",
+      "text": "Предмет хранит пункты/точки для локомотивов. Локомотивы всегда едут к ближайшему непосещённому пункту текущего круга. Используется с $(l:auto_switch_rails)автострелками$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ПКМ по рельсам добавляет/убирает их из пунктов. Можно копировать или сбрасывать в сетке крафта."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "item.cyclic.fireball_dark",
+  "icon": "cyclic:fireball_dark",
+  "category": "cyclic:items",
+  "pages": [
+    {
+      "type": "text",
+      "text": "item.cyclic.fireball_dark.guide"
+    }
+  ]
+}

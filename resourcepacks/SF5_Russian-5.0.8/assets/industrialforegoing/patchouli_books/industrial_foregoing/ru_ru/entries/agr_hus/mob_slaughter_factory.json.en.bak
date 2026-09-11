@@ -1,0 +1,17 @@
+{
+  "name": "Фабрика убоя мобов",
+  "icon": "industrialforegoing:mob_slaughter_factory",
+  "category": "industrialforegoing:agriculture_husbandry",
+  "sortnum": 9,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Машина перерабатывает мобов и животных в $(l:agr_hus/meat)жидкое мясо$() и $(l:agr_hus/pink_slime)розовую слизь$(). Убитые ею мобы не дают дропа и опыта. $(br2)Пассивные мобы дают больше розовой слизи, чем враждебные"
+    },
+    {
+      "type": "crafting",
+      "recipe": "industrialforegoing:mob_slaughter_factory"
+    }
+  ]
+}

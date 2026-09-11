@@ -1,0 +1,17 @@
+{
+  "name": "Дробитель мобов",
+  "icon": "industrialforegoing:mob_crusher",
+  "category": "industrialforegoing:agriculture_husbandry",
+  "sortnum": 6,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Машина $(6)убивает$() мобов как игрок, давая дроп и эссенцию. Дроп берётся напрямую из таблиц добычи. $(br2)Есть альтернативный режим: вместо эссенции дроп генерируется со случайными уровнями $(6)удачи$()."
+    },
+    {
+      "type": "crafting",
+      "recipe": "industrialforegoing:mob_crusher"
+    }
+  ]
+}

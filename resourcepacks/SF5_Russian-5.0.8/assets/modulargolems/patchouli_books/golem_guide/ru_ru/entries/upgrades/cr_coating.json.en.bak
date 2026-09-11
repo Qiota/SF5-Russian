@@ -1,0 +1,13 @@
+{
+  "flag": "mod:create",
+  "name": "Улучшение «Цинк»",
+  "icon": "modulargolems:coating",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:coating",
+      "text": "Входящий урон снижается на фиксированное значение. Макс.: 5"
+    }
+  ]
+}

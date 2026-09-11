@@ -1,0 +1,17 @@
+{
+  "name": "Улучшение «Золотое яблоко»",
+  "icon": "modulargolems:gold",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:gold",
+      "text": "Увеличивает регенерацию здоровья на 1 уровень. Макс. уровень: 5"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:enchanted_gold",
+      "text": "Увеличивает регенерацию здоровья на 2 уровня. Макс. уровень: 5"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Угловой рельс",
+  "icon": "littlelogistics:guide_rail_corner",
+  "category": "littlelogistics:blocks",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:guide_rail_corner",
+      "text": "Помогает судам на резких поворотах, всегда используйте на резких углах и у входов в узкие протоки (например, к докам). Действует на буксиры и баржи. Shift+ПКМ меняет направление."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Сверху не должно быть цельного блока (камень, доски и т.п.; заборы, таблички можно)."
+    }
+  ]
+}

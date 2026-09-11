@@ -1,0 +1,12 @@
+{
+  "name": "Улучшение «Кварц»",
+  "icon": "modulargolems:quartz",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:quartz",
+      "text": "Немного увеличивает урон голема. Макс.: 5"
+    }
+  ]
+}

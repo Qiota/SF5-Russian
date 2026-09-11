@@ -1,0 +1,21 @@
+{
+  "block.create_mechanical_extruder.mechanical_extruder": "Механический экструдер",
+  "create_mechanical_extruder.goggles.bonks": "%1$s тыкается",
+  "create_mechanical_extruder.goggles.recipe_requirement.biome": "Неподходящий биом",
+  "create_mechanical_extruder.goggles.recipe_requirement.ingredients": "Не хватает ингредиентов",
+  "create_mechanical_extruder.goggles.recipe_requirement.max_height": "Слишком высоко",
+  "create_mechanical_extruder.goggles.recipe_requirement.min_height": "Слишком низко",
+  "create_mechanical_extruder.goggles.recipe_requirement.min_speed": "Недостаточная скорость",
+  "create_mechanical_extruder.goggles.recipe_requirement.output": "Выход заполнен или несовместим",
+  "create_mechanical_extruder.ponder.extruder.header": "Генерация блоков",
+  "create_mechanical_extruder.ponder.extruder.text_1": "Экструдер использует силу вращения для создания блоков",
+  "create_mechanical_extruder.ponder.extruder.text_2": "Генерация зависит от боковых и нижних блоков.",
+  "create_mechanical_extruder.ponder.extruder.text_3": "Когда процесс завершён, результат можно забрать ПКМ",
+  "create_mechanical_extruder.ponder.extruder.text_4": "Продукцию также можно извлекать автоматикой",
+  "create_mechanical_extruder.ponder.extruder.text_5": "Если у комбинации ингредиентов несколько возможных результатов, слот фильтра позволяет выбрать нужный",
+  "create_mechanical_extruder.recipe.extruding": "Рецепт экструзии",
+  "create_mechanical_extruder.ui.recipe_requirement.max_height": "Макс. Y: %s",
+  "create_mechanical_extruder.ui.recipe_requirement.min_height": "Мин. Y: %s",
+  "create_mechanical_extruder.ui.recipe_requirement.min_speed": "Мин. скорость: %s",
+  "itemGroup.create_mechanical_extruder:main": "Create: механический экструдер"
+}

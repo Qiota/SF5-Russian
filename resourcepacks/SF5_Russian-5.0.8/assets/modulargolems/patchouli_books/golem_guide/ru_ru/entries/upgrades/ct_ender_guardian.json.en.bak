@@ -1,0 +1,13 @@
+{
+  "flag": "mod:cataclysm",
+  "name": "Улучшение «Страж Края»",
+  "icon": "modulargolems:ender_guardian_void_rune",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:ender_guardian_void_rune",
+      "text": "Призывает руну пустоты в цель. Макс.: 1"
+    }
+  ]
+}

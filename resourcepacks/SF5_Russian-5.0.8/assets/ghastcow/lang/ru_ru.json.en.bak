@@ -1,0 +1,6 @@
+{
+  "entity.ghastcow.ghast_cow": "Гаст-корова",
+  "text.autoconfig.ghastcow.title": "Общие",
+  "text.autoconfig.ghastcow.option.general": "Общие",
+  "text.autoconfig.ghastcow.option.general.requireNamed": "Требовать имя"
+}

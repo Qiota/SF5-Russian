@@ -1,0 +1,7 @@
+{
+  "name": "Машины",
+  "description": "Все машины",
+  "parent": "rftoolsbase:category_rftoolsbase",
+  "icon": "rftoolsbase:machine_infuser",
+  "sortnum": 30
+}

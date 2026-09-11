@@ -1,0 +1,12 @@
+{
+  "name": "Улучшение «Переработка»",
+  "icon": "modulargolems:recycle",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:recycle",
+      "text": "При гибели роняет ремонтируемый держатель с 0 здоровья. Если владелец рядом, держатель вернётся ему в инвентарь."
+    }
+  ]
+}

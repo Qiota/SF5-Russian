@@ -1,0 +1,12 @@
+{
+  "name": "Улучшение «Колокол»",
+  "icon": "modulargolems:bell",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:bell",
+      "text": "При выборе или смене цели голем звонит в колокол, приманивает всех врагов в радиусе 48 блоков и подсвечивает их свечением."
+    }
+  ]
+}

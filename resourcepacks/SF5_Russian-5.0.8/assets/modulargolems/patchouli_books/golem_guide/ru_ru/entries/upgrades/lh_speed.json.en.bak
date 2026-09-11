@@ -1,0 +1,13 @@
+{
+  "flag": "mod:l2hostility",
+  "name": "Улучшение враждебности: скорость",
+  "icon": "modulargolems:hostility_speed",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:hostility_speed",
+      "text": "Как черта скорости у мобов. Макс. уровень: 5"
+    }
+  ]
+}

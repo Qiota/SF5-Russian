@@ -1,0 +1,13 @@
+{
+  "name": "Бесконечный бур",
+  "icon": "industrialforegoing:infinity_drill",
+  "category": "industrialforegoing:tools",
+  "sortnum": 3,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Бесконечный бур копает большие области: чем выше уровень, тем больше область."
+    }
+  ]
+}

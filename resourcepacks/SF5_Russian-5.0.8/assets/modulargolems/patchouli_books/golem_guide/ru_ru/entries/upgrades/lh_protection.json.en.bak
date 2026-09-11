@@ -1,0 +1,13 @@
+{
+  "flag": "mod:l2hostility",
+  "name": "Улучшение враждебности: защита",
+  "icon": "modulargolems:hostility_protection",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:hostility_protection",
+      "text": "Как черта защиты у мобов. Макс. уровень: 4"
+    }
+  ]
+}

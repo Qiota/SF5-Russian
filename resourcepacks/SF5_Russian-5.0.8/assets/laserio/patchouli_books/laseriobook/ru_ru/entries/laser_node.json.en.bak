@@ -1,0 +1,65 @@
+{
+  "name": "Лазерный узел",
+  "icon": "laserio:laser_node",
+  "sortnum": 0,
+  "category": "laserio:blocks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Лазерный узел — важнейший блок LaserIO, он взаимодействует с соседними блоками. $(br2)С помощью карт вроде $(l:laserio:card_item)карты предметов$(/l) можно передавать предметы, жидкости, энергию или редстоун."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Лазерный узел",
+      "images": [
+        "laserio:textures/book/entries/laser_node1.png"
+      ],
+      "border": true,
+      "text": "Узел взаимодействует с сундуком"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Каждая сторона узла имеет сетку 3x3 для карт. Клик ПКМ по стороне узла открывает интерфейс. $(br2)Кнопками сверху переключайте сторону, если нужная труднодоступна.$(br2)На скриншоте узел взаимодействует с инвентарём с западной стороны."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Интерфейс узла",
+      "images": [
+        "laserio:textures/book/entries/laser_node_gui1.png"
+      ],
+      "border": true,
+      "text": "Интерфейс узла с картой"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Узлы могут взаимодействовать с несколькими соседними инвентарями одновременно."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Работа узла",
+      "images": [
+        "laserio:textures/book/entries/laser_node2.png"
+      ],
+      "border": true,
+      "text": "Узел между 2 сундуками"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Узлы соединяются $(l:laserio:laser_wrench)лазерным ключом$(/l), связывая далёкие инвентари. Максимум между соединениями — 8 блоков.$(br2)Если узлы дальше, используйте $(l:laserio:laser_connector)лазерные соединители$()."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Узлы соединены",
+      "images": [
+        "laserio:textures/book/entries/laser_node3.png"
+      ],
+      "border": true,
+      "text": "Два соединённых узла"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Лазерный узел",
+      "recipe": "laserio:laser_node"
+    }
+  ]
+}

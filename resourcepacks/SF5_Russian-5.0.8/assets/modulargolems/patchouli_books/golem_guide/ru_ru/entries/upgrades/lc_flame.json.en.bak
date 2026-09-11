@@ -1,0 +1,13 @@
+{
+  "flag": "mod:l2complements",
+  "name": "Улучшение «Пламя душ»",
+  "icon": "modulargolems:soul_flame",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:soul_flame",
+      "text": "Голем поджигает цель пламенем душ при атаке и атакующего при защите. Иммунитет к урону пламенем душ. Макс.: 3"
+    }
+  ]
+}

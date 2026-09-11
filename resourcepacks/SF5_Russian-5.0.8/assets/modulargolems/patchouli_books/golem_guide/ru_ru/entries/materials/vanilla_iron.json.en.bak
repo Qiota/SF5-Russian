@@ -1,0 +1,28 @@
+{
+  "name": "Железо",
+  "icon": "minecraft:iron_ingot",
+  "category": "modulargolems:materials",
+  "sortnum": 102,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:iron_ingot",
+      "text": "Основной материал частей из железа. Дешёвый ремонт и высокие характеристики за свою цену.$(br2)Рекомендуется для корпуса, чтобы лечение и ремонт были дешёвыми."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:metal_golem_holder{golem_materials:[{part:\"modulargolems:metal_golem_arm\",material:\"modulargolems:iron\"},{part:\"modulargolems:metal_golem_body\",material:\"modulargolems:iron\"},{part:\"modulargolems:metal_golem_arm\",material:\"modulargolems:iron\"},{part:\"modulargolems:metal_golem_legs\",material:\"modulargolems:iron\"}]}",
+      "text": "Нажмите R в JEI, чтобы посмотреть характеристики частей из этого материала."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:humanoid_golem_holder{golem_materials:[{part:\"modulargolems:humanoid_golem_body\",material:\"modulargolems:iron\"},{part:\"modulargolems:humanoid_golem_arms\",material:\"modulargolems:iron\"},{part:\"modulargolems:humanoid_golem_legs\",material:\"modulargolems:iron\"}]}",
+      "text": "Нажмите R в JEI, чтобы посмотреть характеристики частей из этого материала."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:dog_golem_holder{golem_materials:[{part:\"modulargolems:dog_golem_body\",material:\"modulargolems:iron\"},{part:\"modulargolems:dog_golem_legs\",material:\"modulargolems:iron\"}]}",
+      "text": "Нажмите R в JEI, чтобы посмотреть характеристики частей из этого материала."
+    }
+  ]
+}

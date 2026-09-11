@@ -1,0 +1,43 @@
+{
+  "name": "Продв. соединитель",
+  "icon": "laserio:laser_connector_advanced",
+  "sortnum": 2,
+  "category": "laserio:blocks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Продвинутые лазерные соединители работают как $(l:laserio:laser_connector)лазерные соединители$(/l), соединяясь с обычными соединителями и узлами до 8 блоков. $(br2)Но их можно соединить только с одним другим продвинутым соединителем, образуя пару. Дальность между парой бесконечна — даже между измерениями!"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Продв. соединитель",
+      "images": [
+        "laserio:textures/book/entries/laser_connector_advanced1.png"
+      ],
+      "border": true,
+      "text": "Два продвинутых соединителя, связанных друг с другом"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Если продвинутый соединитель уже имеет пару и вы связываете его с новой, старое соединение разорвётся. $(br2)Глядя на блок с $(l:laserio:laser_wrench)лазерным ключом$(/l) в руке, вы увидите координаты парного блока."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Координаты пары",
+      "images": [
+        "laserio:textures/book/entries/laser_connector_advanced2.png"
+      ],
+      "border": true,
+      "text": "Отображение координат парного соединителя"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Продвинутые соединители НЕ прогружают чанки. Прогрузкой чанков занимаетесь вы! Узлы в непрогруженных чанках не работают."
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Продв. лазерный соединитель",
+      "recipe": "laserio:laser_connector_advanced"
+    }
+  ]
+}

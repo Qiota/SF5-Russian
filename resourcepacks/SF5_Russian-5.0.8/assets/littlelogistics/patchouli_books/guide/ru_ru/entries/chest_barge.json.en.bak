@@ -1,0 +1,19 @@
+{
+  "name": "Грузовая баржа",
+  "icon": "littlelogistics:barge",
+  "category": "littlelogistics:vessels",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "littlelogistics:barge",
+      "scale": 0.6,
+      "offset": 0.5,
+      "text": "Простая баржа для предметов, как сундук-вагонетка."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:barge",
+      "text": "Баржа должна быть в доке и в составе буксира, чтобы работать с воронками."
+    }
+  ]
+}

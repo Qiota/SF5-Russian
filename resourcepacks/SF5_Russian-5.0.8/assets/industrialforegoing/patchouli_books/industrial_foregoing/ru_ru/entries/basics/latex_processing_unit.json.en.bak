@@ -1,0 +1,13 @@
+{
+  "name": "Установка переработки латекса",
+  "icon": "industrialforegoing:latex_processing_unit",
+  "category": "industrialforegoing:basics",
+  "sortnum": 1,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Установка переработки латекса потребляет $(6)100$() мВ $(l:basics/latex)латекса$() и $(6)500$() мВ воды для производства 1 $(l:basics/plastic)крошечной сухой резины$()"
+    }
+  ]
+}

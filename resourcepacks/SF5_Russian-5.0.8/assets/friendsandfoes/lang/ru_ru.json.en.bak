@@ -1,0 +1,15 @@
+{
+  "advancements.adventure.complete_hide_and_seek_game.title": "Прятки",
+  "advancements.adventure.complete_hide_and_seek_game.description": "Найдите шалопая трижды в его игре",
+  "block.friendsandfoes.bamboo_beehive": "Бамбуковый улей",
+  "block.friendsandfoes.cherry_beehive": "Вишнёвый улей",
+  "entity.friendsandfoes.rascal": "Шалопай",
+  "item.friendsandfoes.rascal_spawn_egg": "Яйцо призыва шалопая",
+  "subtitle.entity.friendsandfoes.rascal.ambient": "Шалопай дразнится",
+  "subtitle.entity.friendsandfoes.rascal.disappear": "Шалопай исчезает",
+  "subtitle.entity.friendsandfoes.rascal.nod": "Шалопай кивает",
+  "subtitle.entity.friendsandfoes.rascal.hurt": "Шалопаю больно",
+  "subtitle.entity.friendsandfoes.rascal.reappear": "Шалопай появляется",
+  "subtitle.entity.friendsandfoes.rascal.reward": "Шалопай даёт награду",
+  "subtitle.entity.friendsandfoes.rascal.reward_bad": "Шалопай даёт плохую награду"
+}

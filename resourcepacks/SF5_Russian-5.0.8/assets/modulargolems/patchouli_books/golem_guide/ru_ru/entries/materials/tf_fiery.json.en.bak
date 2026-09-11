@@ -1,0 +1,29 @@
+{
+  "flag": "mod:twilightforest",
+  "name": "Огненный",
+  "icon": "twilightforest:fiery_ingot",
+  "category": "modulargolems:materials",
+  "sortnum": 204,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "twilightforest:fiery_ingot",
+      "text": "Основной материал огненных частей. Шипы, невосприимчивость к огню, огненная атака и высокие характеристики. Рекомендуется для рук.$(br2)В Сумеречном лесу — бонус к лечению и урону."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:metal_golem_holder{golem_materials:[{part:\"modulargolems:metal_golem_arm\",material:\"twilightforest:fiery\"},{part:\"modulargolems:metal_golem_body\",material:\"twilightforest:fiery\"},{part:\"modulargolems:metal_golem_arm\",material:\"twilightforest:fiery\"},{part:\"modulargolems:metal_golem_legs\",material:\"twilightforest:fiery\"}]}",
+      "text": "Нажмите R в JEI, чтобы посмотреть характеристики частей из этого материала."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:humanoid_golem_holder{golem_materials:[{part:\"modulargolems:humanoid_golem_body\",material:\"twilightforest:fiery\"},{part:\"modulargolems:humanoid_golem_arms\",material:\"twilightforest:fiery\"},{part:\"modulargolems:humanoid_golem_legs\",material:\"twilightforest:fiery\"}]}",
+      "text": "Нажмите R в JEI, чтобы посмотреть характеристики частей из этого материала."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:dog_golem_holder{golem_materials:[{part:\"modulargolems:dog_golem_body\",material:\"twilightforest:fiery\"},{part:\"modulargolems:dog_golem_legs\",material:\"twilightforest:fiery\"}]}",
+      "text": "Нажмите R в JEI, чтобы посмотреть характеристики частей из этого материала."
+    }
+  ]
+}

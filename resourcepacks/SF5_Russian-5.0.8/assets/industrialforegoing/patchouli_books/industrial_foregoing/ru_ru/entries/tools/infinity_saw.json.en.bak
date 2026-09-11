@@ -1,0 +1,13 @@
+{
+  "name": "Бесконечная пила",
+  "icon": "industrialforegoing:infinity_saw",
+  "category": "industrialforegoing:tools",
+  "sortnum": 3,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Бесконечная пила эффективно рубит деревья: чем выше уровень, тем больше блоков за раз. Продолжайте ломать тот же блок, чтобы срубить большое дерево."
+    }
+  ]
+}

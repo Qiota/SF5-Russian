@@ -1,0 +1,12 @@
+{
+  "name": "Улучшение «Алмаз»",
+  "icon": "modulargolems:diamond",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:diamond",
+      "text": "Даёт броню. Немного повышает выживаемость. Макс.: 2"
+    }
+  ]
+}

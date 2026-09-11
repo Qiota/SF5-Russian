@@ -1,0 +1,17 @@
+{
+  "name": "Жидкостная лазерная база",
+  "icon": "industrialforegoing:fluid_laser_base",
+  "category": "industrialforegoing:resource_production",
+  "sortnum": 15,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "При полном заряде с $(l:resource_production/laser_drill)лазерным буром$() добывает жидкости. Нужен особый нерасходуемый катализатор, определённый биом и глубина бурения. $(br2)Для некоторых жидкостей нужна сущность под машиной. $(br2)Значения смотрите в JEI."
+    },
+    {
+      "type": "crafting",
+      "recipe": "industrialforegoing:fluid_laser_base"
+    }
+  ]
+}

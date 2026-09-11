@@ -1,0 +1,23 @@
+{
+  "name": "Стрелки",
+  "icon": "littlelogistics:switch_rail",
+  "category": "littlelogistics:blocks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Таким стрелкам нужен сигнал редстоуна для переключения. Хорошо работают с детектор-рельсами."
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Стрелка",
+      "recipe": "littlelogistics:switch_rail",
+      "text": "Переключает прямо или влево/вправо."
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "T-развилка",
+      "recipe": "littlelogistics:tee_junction_rail",
+      "text": "Переключает влево/вправо."
+    }
+  ]
+}

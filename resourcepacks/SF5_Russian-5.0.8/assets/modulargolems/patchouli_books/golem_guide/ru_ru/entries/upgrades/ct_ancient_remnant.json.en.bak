@@ -1,0 +1,13 @@
+{
+  "flag": "mod:cataclysm",
+  "name": "Улучшение «Древний остаток»",
+  "icon": "modulargolems:ancient_remnant_sandstorm",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:ancient_remnant_sandstorm",
+      "text": "Призывает песчаную бурю в цели. Макс.: 1"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Режимы",
+  "sortnum": 1,
+  "category": "laserio:mechanics",
+  "icon": "laserio:textures/gui/buttons/modestocker.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Режимы определяют, что карта делает. На следующих страницах — каждый доступный режим.$(br2)Каждый тип карт (предметы/жидкость/энергия) поддерживает три режима. Для примера — карты предметов.$(br2)У редстоун-карт другой набор режимов."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "laserio:card_item{channel:0b,exact:0b,inv:{Items:[],Size:2},itemextractamt:1b,itemextractspeed:20,mode:0b,priority:0s,regulate:0b,roundRobin:0,sneaky:-1b}",
+      "text": "Карты вставки — валидное назначение для объектов, извлекаемых картами извлечения.$(br2)Карты запаса будут пытаться забирать у карт вставки."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "laserio:card_item{channel:0b,exact:0b,inv:{Items:[],Size:2},itemextractamt:1b,itemextractspeed:20,mode:1b,priority:0s,regulate:0b,roundRobin:0,sneaky:-1b}",
+      "text": "Карты извлечения пытаются забрать объекты из соседнего блока. Предметы, например, забираются из соседнего сундука и отправляются карте вставки."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "laserio:card_item{channel:0b,exact:0b,inv:{Items:[],Size:2},itemextractamt:1b,itemextractspeed:20,mode:2b,priority:0s,regulate:0b,roundRobin:0,sneaky:-1b}",
+      "text": "Карты запаса ищут предметы из фильтра и тянут их из других узлов вставки в той же сети.$(br2)Карты запаса требуют фильтр в режиме разрешения."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "laserio:card_item{channel:0b,exact:0b,inv:{Items:[],Size:2},itemextractamt:1b,itemextractspeed:20,mode:3b,priority:0s,regulate:0b,roundRobin:0,sneaky:-1b}",
+      "text": "Карты сенсора не перемещают объекты, а смотрят на соседний инвентарь и выдают редстоун-сигнал на канал редстоуна, если содержимое совпало с фильтром.$(br2)Картам сенсора нужен фильтр."
+    }
+  ]
+}

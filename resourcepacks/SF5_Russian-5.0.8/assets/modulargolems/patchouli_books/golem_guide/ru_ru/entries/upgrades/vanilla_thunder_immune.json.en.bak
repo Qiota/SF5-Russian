@@ -1,0 +1,12 @@
+{
+  "name": "Невосприимчивость к молниям",
+  "icon": "modulargolems:thunder_immune",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:thunder_immune",
+      "text": "Иммунитет к молниям, притягивает их. При ударе даёт сопротивление огню и немного лечит."
+    }
+  ]
+}

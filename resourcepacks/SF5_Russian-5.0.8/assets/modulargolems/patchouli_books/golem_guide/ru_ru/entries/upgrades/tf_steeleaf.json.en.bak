@@ -1,0 +1,13 @@
+{
+  "flag": "mod:twilightforest",
+  "name": "Улучшение «Стальной лист»",
+  "icon": "modulargolems:steeleaf",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:steeleaf",
+      "text": "Больше бонуса урона в Сумеречном лесу. Макс.: 5"
+    }
+  ]
+}

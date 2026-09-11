@@ -1,0 +1,28 @@
+{
+  "name": "Незерит",
+  "icon": "minecraft:netherite_ingot",
+  "category": "modulargolems:materials",
+  "sortnum": 104,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:netherite_ingot",
+      "text": "Основной материал частей из незерита. Много здоровья, невосприимчивость к огню, высокий урон и главное — атака по площади. Но незерит тяжёлый и снижает скорость.$(br2)Настоятельно рекомендуется для рук, подойдёт и для корпуса и ног ради характеристик."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:metal_golem_holder{golem_materials:[{part:\"modulargolems:metal_golem_arm\",material:\"modulargolems:netherite\"},{part:\"modulargolems:metal_golem_body\",material:\"modulargolems:netherite\"},{part:\"modulargolems:metal_golem_arm\",material:\"modulargolems:netherite\"},{part:\"modulargolems:metal_golem_legs\",material:\"modulargolems:netherite\"}]}",
+      "text": "Нажмите R в JEI, чтобы посмотреть характеристики частей из этого материала."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:humanoid_golem_holder{golem_materials:[{part:\"modulargolems:humanoid_golem_body\",material:\"modulargolems:netherite\"},{part:\"modulargolems:humanoid_golem_arms\",material:\"modulargolems:netherite\"},{part:\"modulargolems:humanoid_golem_legs\",material:\"modulargolems:netherite\"}]}",
+      "text": "Нажмите R в JEI, чтобы посмотреть характеристики частей из этого материала."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:dog_golem_holder{golem_materials:[{part:\"modulargolems:dog_golem_body\",material:\"modulargolems:netherite\"},{part:\"modulargolems:dog_golem_legs\",material:\"modulargolems:netherite\"}]}",
+      "text": "Нажмите R в JEI, чтобы посмотреть характеристики частей из этого материала."
+    }
+  ]
+}

@@ -150,7 +150,7 @@
   "screen.biggerreactors.turbine_terminal.tachometer.tooltip": "Тахометр\n§7Как быстро вращается турбина.\n§7Роторы лучше работают на 900 или 1800 об/мин.",
   "screen.biggerreactors.turbine_terminal.energy_generation_rate.tooltip": "Выработка RF\n§7Сколько RF вырабатывает турбина.",
   "screen.biggerreactors.turbine_terminal.flow_rate_governor.tooltip": "Регулятор потока\n§7Как быстро турбина перерабатывает жидкости.",
-  "screen.biggerreactors.turbine_terminal.rotor_efficiency.tooltip": "Эффективность ротора\n§7Эффективность падает, если поток превышает capacity ротора.",
+  "screen.biggerreactors.turbine_terminal.rotor_efficiency.tooltip": "Эффективность ротора\n§7Эффективность падает, если поток превышает вместимость ротора.",
   "screen.biggerreactors.turbine_terminal.internal_battery.tooltip": "Внутренняя батарея\n§7Сколько RF хранится внутри.",
   "screen.biggerreactors.turbine_terminal.intake_tank.tooltip": "Впускной бак\n§7Сколько горячего впуска хранится внутри.",
   "screen.biggerreactors.turbine_terminal.exhaust_tank.tooltip": "Бак выхлопа\n§7Сколько холодного выхлопа хранится внутри.",

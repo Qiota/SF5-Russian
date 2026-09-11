@@ -1,0 +1,5 @@
+{
+  "name": "RFTools Base",
+  "description": "RFTools Base — базовый мод для всех модов семейства RFTools, а также Deep Resonance и XNet",
+  "icon": "rftoolsbase:machine_base"
+}

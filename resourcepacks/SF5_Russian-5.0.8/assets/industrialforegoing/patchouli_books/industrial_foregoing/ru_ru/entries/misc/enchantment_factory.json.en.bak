@@ -1,0 +1,17 @@
+{
+  "name": "Фабрика чар",
+  "icon": "industrialforegoing:enchantment_factory",
+  "category": "industrialforegoing:misc",
+  "sortnum": 0,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "При подаче большого количества $(l:agr_hus/essence)эссенции$() и предмета зачаровывает предмет на уровень $(6)30$()."
+    },
+    {
+      "type": "crafting",
+      "recipe": "industrialforegoing:enchantment_factory"
+    }
+  ]
+}

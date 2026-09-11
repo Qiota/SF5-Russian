@@ -1,0 +1,23 @@
+{
+  "item.createaddition.diamond_grit_sandpaper.tooltip.summary": "Можно использовать для _полировки материалов_. Процесс можно автоматизировать с помощью раздатчика.",
+  "item.createaddition.diamond_grit_sandpaper.tooltip.condition1": "При использовании",
+  "item.createaddition.diamond_grit_sandpaper.tooltip.behaviour1": "Полирует предметы в _левой руке_ или лежащие на _полу_, когда _смотрите на них_",
+  "item.createaddition.copper_spool.tooltip.summary": "Используется для хранения проводов.",
+  "item.createaddition.festive_spool.tooltip.summary": "Используется для хранения проводов.",
+  "item.createaddition.gold_spool.tooltip.summary": "Используется для хранения проводов.",
+  "item.createaddition.electrum_spool.tooltip.summary": "Используется для хранения проводов.",
+  "item.createaddition.spool.tooltip.summary": "Используется для хранения проводов.",
+  "block.createaddition.small_light_connector": "Малый коннектор с лампой",
+  "block.createaddition.small_light_connector.tooltip": "КОННЕКТОР",
+  "block.createaddition.small_light_connector.tooltip.summary": "Соединяет блоки с _Forge Energy_ _проводами_ для передачи _⚡_, светится при получении энергии.",
+  "block.createaddition.small_light_connector.tooltip.condition1": "Низкий ток",
+  "block.createaddition.small_light_connector.tooltip.behaviour1": "Подключён _низковольтными проводами_.",
+  "block.createaddition.small_light_connector.tooltip.condition2": "ПКМ",
+  "block.createaddition.small_light_connector.tooltip.behaviour2": "Держа _медную_, _золотую_ или _электрумовую катушку_, чтобы создать _проводное соединение_ до 4 коннекторов.",
+  "block.createaddition.small_light_connector.tooltip.condition3": "ПКМ гаечным ключом",
+  "block.createaddition.small_light_connector.tooltip.behaviour3": "Переключение режимов _Отдача_, _Приём_ и _Нет_.",
+  "block.createaddition.biomass_pellet_block": "Блок топливных гранул",
+  "itemGroup.createaddition.main": "Create: Crafts & Additions",
+  "createaddition.subtitle.loud_zap": "Катушка Теслы бьёт током",
+  "createaddition.subtitle.little_zap": "Катушка Теслы искрит"
+}

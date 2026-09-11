@@ -1,0 +1,22 @@
+{
+  "item.sophisticatedbackpacks.advanced_jukebox_upgrade": "Улучшенный проигрыватель",
+  "item.sophisticatedbackpacks.advanced_jukebox_upgrade.tooltip": "Портативный проигрыватель с поддержкой большего числа пластинок\nА также больше настроек воспроизведения",
+  "item.sophisticatedbackpacks.stack_upgrade_omega_tier": "Улучшение стака: омега-уровень",
+  "item.sophisticatedbackpacks.stack_upgrade_omega_tier.tooltip": "Поднимает лимит стака до 2 147 483 647",
+  "item.sophisticatedbackpacks.stack_downgrade_tier_1": "Понижение стака 1 уровня",
+  "item.sophisticatedbackpacks.stack_downgrade_tier_1.tooltip": "Делит число стаков в слоте на 8",
+  "item.sophisticatedbackpacks.stack_downgrade_tier_2": "Понижение стака 2 уровня",
+  "item.sophisticatedbackpacks.stack_downgrade_tier_2.tooltip": "Делит число стаков в слоте на 16",
+  "item.sophisticatedbackpacks.stack_downgrade_tier_3": "Понижение стака 3 уровня",
+  "item.sophisticatedbackpacks.stack_downgrade_tier_3.tooltip": "Делит число стаков в слоте на 32",
+  "item.sophisticatedbackpacks.smithing_upgrade": "Кузнечное улучшение",
+  "item.sophisticatedbackpacks.smithing_upgrade.tooltip": "Кузнечный стол во вкладке улучшений",
+  "item.sophisticatedbackpacks.infinity_upgrade": "Улучшение бесконечности (админ)",
+  "item.sophisticatedbackpacks.infinity_upgrade.tooltip": "Делает все предметы в рюкзаке бесконечными\nТолько админы могут задавать бесконечные предметы и ломать/подбирать рюкзак",
+  "item.sophisticatedbackpacks.survival_infinity_upgrade": "Улучшение бесконечности для выживания",
+  "item.sophisticatedbackpacks.survival_infinity_upgrade.tooltip": "Делает все предметы в рюкзаке бесконечными\nВсе игроки могут задавать бесконечные предметы и ломать/подбирать рюкзак",
+  "gui.sophisticatedbackpacks.status.infinity_upgrade_only_admin_break": "Только админы могут ломать рюкзак с улучшением бесконечности",
+  "gui.sophisticatedbackpacks.status.infinity_upgrade_only_admin_pickup": "Только админы могут подбирать рюкзак с улучшением бесконечности",
+  "gui.sophisticatedbackpacks.upgrades.smithing": "Кузнечное дело",
+  "gui.sophisticatedbackpacks.upgrades.smithing.tooltip": "Кузнечное дело"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Улучшение «Изумруд»",
+  "icon": "modulargolems:emerald",
+  "category": "modulargolems:upgrades",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "modulargolems:emerald",
+      "text": "Урон разбойникам сильно увеличен. Макс.: 2"
+    }
+  ]
+}

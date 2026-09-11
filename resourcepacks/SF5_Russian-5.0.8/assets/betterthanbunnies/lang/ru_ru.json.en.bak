@@ -1,0 +1,16 @@
+{
+  "config.betterthanbunnies.cat.general.name": "Основные настройки",
+  "config.betterthanbunnies.cat.general.desc": "Общие настройки, не вошедшие в другие категории.",
+  "config.betterthanbunnies.cat.outfit.name": "Настройки нарядов",
+  "config.betterthanbunnies.cat.outfit.desc": "Настройки кроликов, носящих наряды.",
+  "config.betterthanbunnies.prop.fancyChance.name": "Шанс нарядного кролика",
+  "config.betterthanbunnies.prop.fancyChance.desc": "Шанс того, что кролики будут носить часть наряда, в процентах (0-100)",
+  "config.betterthanbunnies.prop.hatChance.name": "Шанс шляпы",
+  "config.betterthanbunnies.prop.hatChance.desc": "Шанс того, что кролики будут носить шляпу, в процентах (0-100)",
+  "config.betterthanbunnies.prop.monocleChance.name": "Шанс монокля",
+  "config.betterthanbunnies.prop.monocleChance.desc": "Шанс того, что кролики будут носить монокль, в процентах (0-100)",
+  "config.betterthanbunnies.prop.pipeChance.name": "Шанс трубки",
+  "config.betterthanbunnies.prop.pipeChance.desc": "Шанс того, что у кроликов будет трубка, в процентах (0-100)",
+  "config.betterthanbunnies.prop.suitChance.name": "Шанс костюма",
+  "config.betterthanbunnies.prop.suitChance.desc": "Шанс того, что кролики будут носить костюм, в процентах (0-100)"
+}

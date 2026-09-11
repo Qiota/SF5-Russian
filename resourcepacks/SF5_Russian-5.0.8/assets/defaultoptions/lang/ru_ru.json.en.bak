@@ -1,0 +1,7 @@
+{
+  "config.defaultoptions.title": "Настройки по умолчанию",
+  "config.defaultoptions.defaultDifficulty": "Сложность по умолчанию",
+  "config.defaultoptions.defaultDifficulty.tooltip": "Сложность по умолчанию для вновь созданных миров.",
+  "config.defaultoptions.lockDifficulty": "Заблокировать сложность",
+  "config.defaultoptions.lockDifficulty.tooltip": "Если true, сложность новых миров будет заблокирована на значении по умолчанию. Игроки не смогут её разблокировать без сторонних инструментов! Вероятно, плохая идея. Не рекомендую. Зачем я добавляю эту опцию?"
+}

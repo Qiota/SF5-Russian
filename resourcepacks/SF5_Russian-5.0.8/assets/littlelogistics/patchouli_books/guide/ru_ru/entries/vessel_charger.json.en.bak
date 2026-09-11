@@ -1,0 +1,12 @@
+{
+  "name": "Зарядник",
+  "icon": "littlelogistics:vessel_charger",
+  "category": "littlelogistics:blocks",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:vessel_charger",
+      "text": "Зарядник для $(l:energy_tug)энергобуксира$() и $(l:energy_locomotive)энерголокомотива$(), подключите любой Forge Energy кабель. Ставьте поверх дока для зарядки при стыковке или рядом со стыковочным путём для поездов."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Рыбацкая баржа",
+  "icon": "littlelogistics:fishing_barge",
+  "category": "littlelogistics:vessels",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "littlelogistics:fishing_barge",
+      "scale": 0.6,
+      "offset": 0.5,
+      "text": "Пассивно рыбачит, использует ванильную таблицу лута удочки."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:fishing_barge",
+      "text": "Нужна открытая вода для сетей. Используйте длинные маршруты в океане, чтобы избежать штрафов «мелководья» и «перелова». Подцепите сзади грузовую баржу — у рыбацкой своего инвентаря нет."
+    }
+  ]
+}
