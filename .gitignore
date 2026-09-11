@@ -1,2 +1,9 @@
 *.en.bak
+*.bak
+*.tmp
+*.orig
+*.rej
+Thumbs.db
+desktop.ini
+.DS_Store
 
